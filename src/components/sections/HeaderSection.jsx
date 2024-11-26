@@ -9,10 +9,10 @@ const HeaderSection = () => {
   };
 
   return (
-    <header className="bg-gray-800 text-white">
+    <header className=" text-black">
       <div className="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold">MyLogo</h1>
+          <h1 className="text-2xl font-bold">MyLogo</h1>      
         </div>
         <nav className="hidden md:flex space-x-8">
           <a href="#home" className="hover:text-gray-400">Home</a>

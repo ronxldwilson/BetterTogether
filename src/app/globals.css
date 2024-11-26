@@ -1,4 +1,65 @@
+/* Include Tailwind's base styles */
 @tailwind base;
+
+/* Include Tailwind's component styles */
 @tailwind components;
+
+/* Include Tailwind's utility classes */
 @tailwind utilities;
 
+/* Define BriemHand Regular font */
+@font-face {
+    font-family: 'BriemHand';
+    src: url('/fonts/webfonts/BriemHand-regular.woff2') format('woff2'),
+         url('/fonts/webfonts/BriemHand-regular.woff') format('woff'),
+         url('/fonts/webfonts/BriemHand-regular.ttf') format('truetype'),
+         url('/fonts/webfonts/BriemHand-regular.otf') format('opentype');
+    font-weight: normal;  /* Regular weight */
+    font-style: normal;
+}
+
+/* Define BriemHand Medium font */
+@font-face {
+    font-family: 'BriemHand';
+    src: url('/fonts/webfonts/BriemHand-medium.woff2') format('woff2'),
+         url('/fonts/webfonts/BriemHand-medium.woff') format('woff'),
+         url('/fonts/webfonts/BriemHand-medium.ttf') format('truetype'),
+         url('/fonts/webfonts/BriemHand-medium.otf') format('opentype');
+    font-weight: 500;  /* Medium weight */
+    font-style: normal;
+}
+
+/* Define Fira Sans Regular font */
+@font-face {
+    font-family: 'FiraSans';
+    src: url('/fonts/FiraSans/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Define Fira Sans Bold font */
+@font-face {
+    font-family: 'FiraSans';
+    src: url('/fonts/FiraSans/FiraSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Apply BriemHand Medium to h1 */
+@layer base {
+    h1 {
+        font-family: 'BriemHand', sans-serif;
+        font-weight: 500;  /* Medium weight */
+    }
+
+    /* Apply BriemHand Regular to h2 */
+    h2 {
+        font-family: 'BriemHand', sans-serif;
+        font-weight: normal;  /* Regular weight */
+    }
+
+    /* Apply Fira Sans Regular to p and button */
+    p, button {
+        font-family: 'FiraSans', sans-serif;
+    }
+}
