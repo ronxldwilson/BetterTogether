@@ -3,17 +3,17 @@ const FirstSection = () => {
     return (
         <div className="flex flex-col sm:py-2 lg:flex-row justify-center items-center lg:items-start lg:gap-10 px-4">
             {/* Text Section */}
-            <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start ">
+            <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
                 {/* Text Section */}
-                <div className="text-center lg:text-left max-w-lg">
-                    <div className="py-10">
+                <div className="text-center lg:text-left max-w-lg ">
+                    <div className="py-10 animate-slideInHeading">
                         <h1 className="">Holistic <br /> Mental Wellness <br /> For Everyone</h1>
                     </div>
 
-                    <p>
+                    <p className="animate-slideInPara">
                         We offer carefully tailored mental wellness programs with expert guidance & community support that take you from surviving to thriving.
                     </p>
-                    <button className="my-5">
+                    <button className="my-5 animate-slideInButton">
                         Know More
                     </button>
                     {/* Image Section */}

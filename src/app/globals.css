@@ -72,12 +72,12 @@
 
         /* Small screens */
         h1 {
-            font-size: 56px;
+            font-size: 48px;
             /* Adjust to 56px on mobile */
         }
 
         h2 {
-            font-size: 48px;
+            font-size: 42px;
             /* Adjust to 48px on mobile */
         }
     }
