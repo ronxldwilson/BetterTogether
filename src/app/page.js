@@ -14,19 +14,12 @@ export default function Home() {
     <>
       <HeaderSection />
       <FirstSection />
-
       <BrightAsYouSection />
-
       <MeetTeamSection />
-
       <TestimonialsSection />
-
       <FAQSection />
-
       <NewsletterSection />
-
       <ContactUsSection />
-
       <FooterSection />
     </>
   );
