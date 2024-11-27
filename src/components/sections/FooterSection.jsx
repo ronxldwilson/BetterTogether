@@ -6,7 +6,7 @@ const FooterSection = () => {
             <div className="flex flex-wrap justify-between">
               {/* Logo and Tagline */}
               <div className="w-full md:w-1/4 mb-8 md:mb-0">
-                <h2 className="text-2xl font-bold text-white mb-2">Better Together</h2>
+                <h3 className="text-2xl font-bold text-white mb-2">Better Together</h3>
                 <p className="text-gray-400">Empowering Minds, Together.</p>
               </div>
                 

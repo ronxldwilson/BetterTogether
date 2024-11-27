@@ -41,7 +41,7 @@ const faqsCol2 = [
 const FAQSection = () => {
     return (
         <div className="text-center p-6">
-            <h2 className="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
+            <h2 className="mb-8">Frequently Asked Questions</h2>
             <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
                 {/* Accordion Column 1 */}
                 <div className="w-full max-w-md">

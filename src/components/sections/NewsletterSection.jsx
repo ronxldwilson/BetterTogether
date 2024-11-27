@@ -1,7 +1,7 @@
 const NewsletterSection = () => {
     return (
         <div className="text-center p-6 ">
-            <h2 className="text-2xl font-bold mb-4">Subscribe To Our Newsletter</h2>
+            <h2 className=" mb-4">Subscribe To Our Newsletter</h2>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 {/* Input Field */}
                 <input
