@@ -10,10 +10,10 @@
 /* Define BriemHand Regular font */
 @font-face {
     font-family: 'BriemHand';
-    src: url('/fonts/webfonts/BriemHand-regular.woff2') format('woff2'),
-         url('/fonts/webfonts/BriemHand-regular.woff') format('woff'),
-         url('/fonts/webfonts/BriemHand-regular.ttf') format('truetype'),
-         url('/fonts/webfonts/BriemHand-regular.otf') format('opentype');
+    src: url('/fonts/BriemHand-Regular.woff2') format('woff2'),
+         url('/fonts/BriemHand-Regular.woff') format('woff'),
+         url('/fonts/BriemHand-Regular.ttf') format('truetype'),
+         url('/fonts/BriemHand-Regular.otf') format('opentype');
     font-weight: normal;  /* Regular weight */
     font-style: normal;
 }
@@ -21,18 +21,16 @@
 /* Define BriemHand Medium font */
 @font-face {
     font-family: 'BriemHand';
-    src: url('/fonts/webfonts/BriemHand-medium.woff2') format('woff2'),
-         url('/fonts/webfonts/BriemHand-medium.woff') format('woff'),
-         url('/fonts/webfonts/BriemHand-medium.ttf') format('truetype'),
-         url('/fonts/webfonts/BriemHand-medium.otf') format('opentype');
+    src: url('/fonts/BriemHand-Regular.woff2') format('woff2');
     font-weight: 500;  /* Medium weight */
     font-style: normal;
 }
 
+
 /* Define Fira Sans Regular font */
 @font-face {
     font-family: 'FiraSans';
-    src: url('/fonts/FiraSans/FiraSans-Regular.ttf') format('truetype');
+    src: url('/fonts/FiraSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,7 +38,7 @@
 /* Define Fira Sans Bold font */
 @font-face {
     font-family: 'FiraSans';
-    src: url('/fonts/FiraSans/FiraSans-Bold.ttf') format('truetype');
+    src: url('/fonts/FiraSans-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -49,7 +47,8 @@
 @layer base {
     h1 {
         font-family: 'BriemHand', sans-serif;
-        font-weight: 500;  /* Medium weight */
+        font-weight: bold;  /* Medium weight */
+        font-size: xx-large;
     }
 
     /* Apply BriemHand Regular to h2 */
@@ -59,7 +58,17 @@
     }
 
     /* Apply Fira Sans Regular to p and button */
-    p, button {
+    p {
+        
         font-family: 'FiraSans', sans-serif;
+    }
+    button {
+        font-family: 'FiraSans', sans-serif;
+        font-size: x-small;
+        background-color: #CE2D4F;
+        padding-left: 25;
+        padding-right: 25;
+        padding-top: 30;
+        padding-bottom: 30;
     }
 }
