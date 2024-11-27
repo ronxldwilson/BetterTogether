@@ -100,3 +100,7 @@ button {
     border-radius: 15px;
     /* margin: 25px; */
 }
+
+html {
+    scroll-behavior: smooth;
+}

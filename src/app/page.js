@@ -15,11 +15,15 @@ export default function Home() {
       <HeaderSection />
       <FirstSection />
       <BrightAsYouSection />
+      <div id="about-us">
       <MeetTeamSection />
+      </div>
       <TestimonialsSection />
       <FAQSection />
       <NewsletterSection />
+      <div id="contact">
       <ContactUsSection />
+      </div>
       <FooterSection />
     </>
   );
