@@ -29,8 +29,13 @@ const BrightAsYouSection = () => {
         <div className="text-center">
 
             <h2>Bright As You</h2>
-            <p>At Better Together, we don’t believe in short term solutions, but sustainable ones. The Bright As You Program brings a holistic balance between the mental,  emotional, and physical. </p>
-            <button> Know More</button>
+
+            <div className="w-full flex justify-center">
+                <p className="p-3 px-14 xl:w-1/2 text-center">
+                    At Better Together, we don’t believe in short term solutions, but sustainable ones. The Bright As You Program brings a holistic balance between the mental, emotional, and physical.
+                </p>
+            </div>
+            <button className="p-5"> Know More</button>
             <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:gap-16">
                 {/* Accordion Section */}
                 <div className="p-4 lg:p-10 w-full lg:w-auto">

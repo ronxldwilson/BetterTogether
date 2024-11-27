@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
     ];
 
     return (
-        <div>
+        <div className="p-10">
             <div className="flex justify-center space-x-4">
                 <img src="Vector 2.svg" alt="" />
                 <h2 className="text-center mb-6">Testimonials</h2>

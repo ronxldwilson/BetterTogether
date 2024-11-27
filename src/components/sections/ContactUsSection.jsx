@@ -6,9 +6,9 @@ const ContactUsSection = () => {
     return (
         <div className="text-center">
             <h2>Contact Us</h2>
-            <p>Have Questions? We’re an email away! <br />
+            <p>Have Questions? We’re an email away! <br /> <br />
 
-                Reach us at queries.bettertogether@gmail.com for questions, queries, or collaborations. <br />
+                Reach us at queries.bettertogether@gmail.com for questions, queries, or collaborations. <br /> <br />
 
                 Or send us a message on our social media!</p>
 

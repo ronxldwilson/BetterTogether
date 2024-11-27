@@ -2,38 +2,38 @@ import Accordian from "@components/Accordian"
 
 const faqsCol1 = [
     {
-        heading: "Therapy",
+        heading: "Question to be asked",
         content: "Therapy offers a safe space to explore your thoughts, heal, and grow—because you deserve to feel your best.",
     },
     {
-        heading: "Fitness",
+        heading: "Question to be asked",
         content: "Embrace the power of movement to uplift your mental health—getting active can reduce stress, boost your mood, and leave you feeling more resilient every day!",
     },
     {
-        heading: "Nutrition",
+        heading: "Question to be asked",
         content: "Nourish your mind and body with balanced nutrition—discover how the right foods can boost your mood",
     },
     {
-        heading: "Psychiatric Care",
+        heading: "Question to be asked",
         content: "Professional psychiatric care is a powerful tool for mental wellness—find balance and the right support when you need it.",
     }
 ];
 
 const faqsCol2 = [
     {
-        heading: "Therapy",
+        heading: "Question to be asked",
         content: "Therapy offers a safe space to explore your thoughts, heal, and grow—because you deserve to feel your best.",
     },
     {
-        heading: "Fitness",
+        heading: "Question to be asked",
         content: "Embrace the power of movement to uplift your mental health—getting active can reduce stress, boost your mood, and leave you feeling more resilient every day!",
     },
     {
-        heading: "Nutrition",
+        heading: "Question to be asked",
         content: "Nourish your mind and body with balanced nutrition—discover how the right foods can boost your mood",
     },
     {
-        heading: "Psychiatric Care",
+        heading: "Question to be asked",
         content: "Professional psychiatric care is a powerful tool for mental wellness—find balance and the right support when you need it.",
     }
 ];
