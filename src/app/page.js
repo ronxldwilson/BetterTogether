@@ -12,23 +12,22 @@ import FooterSection from "@components/sections/FooterSection"
 export default function Home() {
   return (
     <>
-      <HeaderSection/>
+      <HeaderSection />
+      <FirstSection />
 
-      <FirstSection/>
-      
-      <BrightAsYouSection/>
-      
+      <BrightAsYouSection />
+
       <MeetTeamSection />
-      
-      <TestimonialsSection/>
-      
-      <FAQSection/>
-      
-      <NewsletterSection/>
-      
-      <ContactUsSection/>
-      
-      <FooterSection/>
+
+      <TestimonialsSection />
+
+      <FAQSection />
+
+      <NewsletterSection />
+
+      <ContactUsSection />
+
+      <FooterSection />
     </>
   );
 }
