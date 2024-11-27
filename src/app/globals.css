@@ -11,10 +11,11 @@
 @font-face {
     font-family: 'BriemHand';
     src: url('/fonts/BriemHand-Regular.woff2') format('woff2'),
-         url('/fonts/BriemHand-Regular.woff') format('woff'),
-         url('/fonts/BriemHand-Regular.ttf') format('truetype'),
-         url('/fonts/BriemHand-Regular.otf') format('opentype');
-    font-weight: normal;  /* Regular weight */
+        url('/fonts/BriemHand-Regular.woff') format('woff'),
+        url('/fonts/BriemHand-Regular.ttf') format('truetype'),
+        url('/fonts/BriemHand-Regular.otf') format('opentype');
+    font-weight: normal;
+    /* Regular weight */
     font-style: normal;
 }
 
@@ -22,7 +23,8 @@
 @font-face {
     font-family: 'BriemHand';
     src: url('/fonts/BriemHand-Regular.woff2') format('woff2');
-    font-weight: 500;  /* Medium weight */
+    font-weight: 500;
+    /* Medium weight */
     font-style: normal;
 }
 
@@ -45,33 +47,56 @@
 
 /* Apply BriemHand Medium to h1 */
 @layer base {
+
+    /* For h1, set 64px as default and 56px for small screens (sm) */
     h1 {
         font-family: 'BriemHand', sans-serif;
-        font-weight: bold;  /* Medium weight */
+        font-weight: bold;
+        /* Medium weight */
         font-size: 64px;
+        /* Default size for larger screens */
         line-height: 70px;
     }
 
-    /* Apply BriemHand Regular to h2 */
+    /* For h2, set 56px as default and 48px for small screens (sm) */
     h2 {
         font-family: 'BriemHand', sans-serif;
-        font-weight: normal;  /* Regular weight */
+        font-weight: normal;
+        /* Regular weight */
         font-size: 56px;
+        /* Default size for larger screens */
     }
 
-    /* Apply Fira Sans Regular to p and button */
-    p {
-        
-        font-family: 'FiraSans', sans-serif;
-        font-size: 25px;
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 640px) {
+
+        /* Small screens */
+        h1 {
+            font-size: 56px;
+            /* Adjust to 56px on mobile */
+        }
+
+        h2 {
+            font-size: 48px;
+            /* Adjust to 48px on mobile */
+        }
     }
-    button {
-        font-family: 'FiraSans', sans-serif;
-        font-size: 25px;
-        background-color: #CE2D4F;
-        color:white;
-        padding: 25px 30px;
-        border-radius: 15px;
-        /* margin: 25px; */
-    }
+}
+
+
+/* Apply Fira Sans Regular to p and button */
+p {
+
+    font-family: 'FiraSans', sans-serif;
+    font-size: 25px;
+}
+
+button {
+    font-family: 'FiraSans', sans-serif;
+    font-size: 25px;
+    background-color: #CE2D4F;
+    color: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    /* margin: 25px; */
 }

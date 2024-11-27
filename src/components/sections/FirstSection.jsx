@@ -1,12 +1,12 @@
 
 const FirstSection = () => {
     return (
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:gap-10 px-4">
+        <div className="flex flex-col sm:py-2 lg:flex-row justify-center items-center lg:items-start lg:gap-10 px-4">
             {/* Text Section */}
             <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start ">
                 {/* Text Section */}
                 <div className="text-center lg:text-left max-w-lg">
-                    <div className="py-10 ">
+                    <div className="py-10">
                         <h1 className="">Holistic <br /> Mental Wellness <br /> For Everyone</h1>
                     </div>
 
