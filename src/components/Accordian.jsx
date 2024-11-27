@@ -9,7 +9,7 @@ function Accordian({ faqs }) {
     };
 
     return (
-        <div className="max-w-xs mx-auto mt-8">
+        <div className="max-w-xs mx-auto">
             <div className="space-y-4">
                 {faqs.map((faq, index) => (
                     <div
@@ -18,13 +18,13 @@ function Accordian({ faqs }) {
                     >
                         <button
                             onClick={() => toggleFAQ(index)}
-                            className="w-full p-4 text-left font-medium bg-custom-mint hover:bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            className="w-full p-4 text-left text-black font-medium bg-custom-mint hover:bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         >
                             {faq.heading}
                         </button>
                         <div
-                            className={`overflow-hidden transition-all duration-300 ${
-                                openIndex === index ? "max-h-40 p-4" : "max-h-0"
+                            className={`overflow-hidden transition-all rounded-lg duration-300 ${
+                                openIndex === index ? "max-h-56 p-4" : "max-h-0"
                             } bg-custom-wheat text-gray-700`}
                         >
                             <p>{faq.content}</p>

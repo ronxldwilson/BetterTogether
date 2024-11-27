@@ -27,24 +27,24 @@ const faqs = [
 const BrightAsYouSection = () => {
     return (
         <div className="text-center">
-            
-            <h1>Bright As You</h1>
-            <p>We offer carefully tailored mental wellness programs with expert guidance & community support that take you from surviving to thriving.</p>
-            <button> Know More</button>
 
-            <div className="flex justify-center">
-                <div className="p-10">
+            <h2>Bright As You</h2>
+            <p>At Better Together, we don’t believe in short term solutions, but sustainable ones. The Bright As You Program brings a holistic balance between the mental,  emotional, and physical. </p>
+            <button> Know More</button>
+            <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:gap-16">
+                {/* Accordion Section */}
+                <div className="p-4 lg:p-10 w-full lg:w-auto">
                     <Accordian faqs={faqs} />
                 </div>
 
-                <div className="flex justify-center items-center">
-                    <div>
-
-                    <img src="/placeholder.jpg" alt="" />
-                    </div>
+                {/* Image Section */}
+                <div className="flex justify-center items-center w-full lg:w-auto order-last lg:order-none">
+                    <img src="/placeholder.jpg" alt="Placeholder Image" className="w-full lg:w-auto max-w-md" />
                 </div>
-
             </div>
+
+
+
         </div>
     )
 }

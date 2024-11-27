@@ -48,27 +48,30 @@
     h1 {
         font-family: 'BriemHand', sans-serif;
         font-weight: bold;  /* Medium weight */
-        font-size: xx-large;
+        font-size: 64px;
+        line-height: 70px;
     }
 
     /* Apply BriemHand Regular to h2 */
     h2 {
         font-family: 'BriemHand', sans-serif;
         font-weight: normal;  /* Regular weight */
+        font-size: 56px;
     }
 
     /* Apply Fira Sans Regular to p and button */
     p {
         
         font-family: 'FiraSans', sans-serif;
+        font-size: 25px;
     }
     button {
         font-family: 'FiraSans', sans-serif;
-        font-size: x-small;
+        font-size: 25px;
         background-color: #CE2D4F;
-        padding-left: 25;
-        padding-right: 25;
-        padding-top: 30;
-        padding-bottom: 30;
+        color:white;
+        padding: 25px 30px;
+        border-radius: 15px;
+        /* margin: 25px; */
     }
 }
