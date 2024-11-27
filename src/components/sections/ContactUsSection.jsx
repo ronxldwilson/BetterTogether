@@ -1,41 +1,132 @@
+"use client"
+import { useState } from "react";
 import DropdownInput from "@components/DropdownInput";
 
 const ContactUsSection = () => {
     const optionsList = ["Option 1", "Option 2", "Option 3", "Option 4"];
 
+    // State to manage form inputs
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        type_of_query: optionsList[0],
+        question: "",
+    });
+
+    const [error, setError] = useState(""); // State for error messages
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleDropdownChange = (selectedOption) => {
+        setFormData((prev) => ({ ...prev, type_of_query: selectedOption.toSring() })); // Update 'type_of_query' field
+    };
+    
+
+    const validateForm = () => {
+        if (!formData.name || !formData.email || !formData.question) {
+            setError("Please fill in all required fields.");
+            return false;
+        }
+        // Optionally, check if email is valid (basic regex validation)
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(formData.email)) {
+            setError("Please enter a valid email address.");
+            return false;
+        }
+
+        setError(""); // Clear the error message if the form is valid
+        return true;
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Validate the form
+        if (!validateForm()) {
+            return; // Stop if form is invalid
+        }
+
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                throw new Error("Failed to send message");
+            }
+
+            // Handle success (e.g., clear form or show a success message)
+            alert("Message sent successfully!");
+            setFormData({
+                name: "",
+                email: "",
+                type_of_query: optionsList[0],
+                question: "",
+            });
+            console.log("formData: " +  formData)
+        } catch (error) {
+            console.error("Error sending message:", error);
+            alert("There was an issue sending your message. Please try again.");
+        }
+    };
+
     return (
         <div className="text-center">
             <h2>Contact Us</h2>
-            <p>Have Questions? We’re an email away! <br /> <br />
+            <p>
+                Have Questions? We’re an email away! <br /> <br />
+                Reach us at queries.bettertogether@gmail.com for questions,
+                queries, or collaborations. <br /> <br />
+                Or send us a message on our social media!
+            </p>
 
-                Reach us at queries.bettertogether@gmail.com for questions, queries, or collaborations. <br /> <br />
+            {error && <p className="text-red-500">{error}</p>} {/* Show error message if validation fails */}
 
-                Or send us a message on our social media!</p>
-
-            <form action="" className="space-y-4 p-6 max-w-lg mx-auto bg-gray-100 rounded-lg shadow-md">
-                {/* First Name */}
+            <form
+                onSubmit={handleSubmit}
+                className="space-y-4 p-6 max-w-lg mx-auto bg-gray-100 rounded-lg shadow-md"
+            >
+                {/* Name */}
                 <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     placeholder="Name"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md text-gray-800 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
                 {/* Email */}
                 <input
-                    type="text"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="Email"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md text-gray-800 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
                 {/* Dropdown */}
                 <div>
-                    <DropdownInput options={optionsList} />
+                    <DropdownInput
+                        options={optionsList}
+                        onChange={handleDropdownChange}
+                        value={formData.type_of_query} // Ensure this matches the correct key in the state
+                    />
                 </div>
-
-                
 
                 {/* Your Question */}
                 <textarea
+                    name="question"
+                    value={formData.question}
+                    onChange={handleChange}
                     placeholder="Your Question"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md text-gray-800 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500"
                     rows="4"
@@ -44,15 +135,13 @@ const ContactUsSection = () => {
                 {/* Submit Button */}
                 <button
                     type="submit"
-                    className="w-full px-4 py-2  text-white rounded-md transition duration-300"
+                    className="w-full px-4 py-2 bg-blue-500 text-white rounded-md transition duration-300 hover:bg-blue-600"
                 >
                     Submit
                 </button>
             </form>
-
-
         </div>
-    )
-}
+    );
+};
 
 export default ContactUsSection;
