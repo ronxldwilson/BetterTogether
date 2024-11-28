@@ -13,9 +13,12 @@ const FirstSection = () => {
                     <p className="animate-slideInPara">
                         We offer carefully tailored mental wellness programs with expert guidance & community support that take you from surviving to thriving.
                     </p>
+                    <a href="#BAY">
+
                     <button className="my-4 md:my-5 animate-slideInButton">
                         Know More
                     </button>
+                    </a>
                     {/* Image Section */}
                     <img
                         className=" hidden xl:block z-10"

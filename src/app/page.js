@@ -14,7 +14,9 @@ export default function Home() {
     <>
       <HeaderSection />
       <FirstSection />
+      <div id="BAY">
       <BrightAsYouSection />
+      </div>
       <div id="about-us">
       <MeetTeamSection />
       </div>
