@@ -31,7 +31,7 @@ const FirstSection = () => {
                 </div>
             </div>
             {/* Image Section */}
-            <div className="flex justify-center mt-6 lg:mt-0">
+            <div className="flex justify-center py-4 md:py-10 lg:mt-0">
                 <img src="placeholder.jpg" alt="Placeholder Image" className="w-48 lg:w-auto max-w-md" />
             </div>
         </div>

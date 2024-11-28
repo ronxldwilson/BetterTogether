@@ -1,6 +1,5 @@
 "use client";
 
-import HeaderSection from "@components/sections/HeaderSection";
 import EventCard from "@components/EventCard";
 
 export default function Events() {
@@ -8,7 +7,7 @@ export default function Events() {
         {
             title: "Event 1",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-            onClick: "/events/BAY",
+            onClick: "/events/event-one",
             buttonText: "Register",
         },
         {

@@ -135,7 +135,7 @@ const ContactUsSection = () => {
                 {/* Submit Button */}
                 <button
                     type="submit"
-                    className="w-full px-4 py-2 bg-blue-500 text-white rounded-md transition duration-300 hover:bg-blue-600"
+                    className="w-full px-4 py-2 text-white rounded-md transition duration-300"
                 >
                     Submit
                 </button>

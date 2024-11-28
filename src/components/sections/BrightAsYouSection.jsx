@@ -45,7 +45,7 @@ const BrightAsYouSection = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className="flex justify-center items-center w-full lg:w-auto order-last lg:order-none">
+                <div className="flex justify-center items-center p-4 lg:p-10 w-full lg:w-auto order-last lg:order-none">
                     <img src="/placeholder.jpg" alt="Placeholder Image" className="w-48 lg:w-auto max-w-md" />
                 </div>
             </div>

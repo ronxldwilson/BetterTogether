@@ -29,7 +29,7 @@ const DropdownInput = ({ options }) => {
           {options.map((option, index) => (
             <li
               key={index}
-              className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              className=" px-4 py-2 hover:bg-gray-100 cursor-pointer text-left"
               onClick={() => handleOptionClick(option)}
             >
               {option}

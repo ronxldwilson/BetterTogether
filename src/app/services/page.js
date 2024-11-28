@@ -2,6 +2,7 @@
 
 import HeaderSection from "@components/sections/HeaderSection";
 import ServiceCard from "@components/ServiceCard";
+import FooterSection from "@components/sections/FooterSection";
 
 export default function Services() {
     const services = [
@@ -38,6 +39,7 @@ export default function Services() {
                     />
                 ))}
             </div>
+            <FooterSection/>
         </div>
     );
 }
