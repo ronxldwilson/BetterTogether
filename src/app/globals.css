@@ -66,40 +66,54 @@
         font-size: 56px;
         /* Default size for larger screens */
     }
+    p {
 
+        font-family: 'FiraSans', sans-serif;
+        font-size: 25px;
+    }
+    button {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 25px;
+        background-color: #CE2D4F;
+        color: white;
+        padding: 25px 30px;
+        border-radius: 15px;
+        /* margin: 25px; */
+    }
     /* Responsive adjustments for smaller screens */
     @media (max-width: 640px) {
 
         /* Small screens */
         h1 {
-            font-size: 48px;
-            /* Adjust to 56px on mobile */
+            font-size: 24px;
+            /* Adjust to 24px on mobile */
+            line-height: 110%;
+
         }
 
         h2 {
-            font-size: 42px;
-            /* Adjust to 48px on mobile */
+            font-size: 22px;
+            /* Adjust to 18px on mobile */
         }
+        p {
+            font-size: 14px;
+        }
+        button {
+            font-family: 'FiraSans', sans-serif;
+            font-size: 12px;
+            background-color: #CE2D4F;
+            color: white;
+            padding: 20px 25px;
+            border-radius: 15px;
+            /* margin: 25px; */
+        }
+
     }
 }
 
 
-/* Apply Fira Sans Regular to p and button */
-p {
 
-    font-family: 'FiraSans', sans-serif;
-    font-size: 25px;
-}
 
-button {
-    font-family: 'FiraSans', sans-serif;
-    font-size: 25px;
-    background-color: #CE2D4F;
-    color: white;
-    padding: 25px 30px;
-    border-radius: 15px;
-    /* margin: 25px; */
-}
 
 html {
     scroll-behavior: smooth;

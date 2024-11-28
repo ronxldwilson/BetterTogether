@@ -43,7 +43,7 @@ const FAQSection = () => {
         <div className="text-center p-6">
             <div className="flex justify-center space-x-4 mb-8">
                 <h2 className="">Frequently Asked Questions</h2>
-                <img src="Vector 3.svg" alt="" />
+                <img src="Vector 3.svg" alt="" className="w-8 "/>
             </div>
 
             <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
