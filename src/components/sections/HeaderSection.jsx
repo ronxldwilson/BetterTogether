@@ -10,16 +10,16 @@ const HeaderSection = () => {
 
   return (
     <header className=" text-black">
-      <div className="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
           <h1 className="text-2xl font-bold">MyLogo</h1>
         </div>
         <nav className="hidden md:flex space-x-8">
-          <a href="#about-us" className="hover:text-gray-400">About Us</a>
-          <a href="/services" className="hover:text-gray-400">Services</a>
-          <a href="/services/events" className="hover:text-gray-400">Events</a>
-          <a href="#contact" className="hover:text-gray-400">Contact Us</a>
-          <a href="/join-community" target="_blank" className="hover:text-gray-400"> <button>
+          <a href="#about-us" className="hover:text-gray-400 py-4">About Us</a>
+          <a href="/services" className="hover:text-gray-400 py-4">Services</a>
+          <a href="/services/events" className="hover:text-gray-400 py-4">Events</a>
+          <a href="#contact" className="hover:text-gray-400 py-4">Contact Us</a>
+          <a href="/join-community" target="_blank" className="hover:text-gray-400"> <button className='p-4'>
             Join Community
           </button>
           </a>
