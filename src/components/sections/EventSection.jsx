@@ -1,39 +1,42 @@
 "use client";
 
 import HeaderSection from "@components/sections/HeaderSection";
-import ServiceCard from "@components/ServiceCard";
+import EventCard from "@components/EventCard";
 
-export default function Services() {
-    const services = [
+export default function Events() {
+    const Events = [
         {
-            title: "Bright As You",
+            title: "Event 1",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-            onClick: "/services/BAY"
+            onClick: "/events/BAY",
+            buttonText: "Register",
         },
         {
-            title: "Events",
+            title: "Events 2",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-            onClick: "/services/events"
+            onClick: "/events/event-two",
+            buttonText: "Register",
         },
         {
-            title: "Enterprise",
+            title: "Event 3",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-            onClick: "/services/enterprise"
+            onClick: "/events/event-three",
+            buttonText: "Register",
         },
     ];
 
     return (
         <div className="text-center">
-            <HeaderSection />
 
-            <h1 className="mb-6">Services</h1>
+            <h1 className="mb-6">Upcoming Events</h1>
             <div className="flex flex-col items-center justify-center gap-6 px-6">
-                {services.map((service, index) => (
-                    <ServiceCard
+                {Events.map((Events, index) => (
+                    <EventCard
                         key={index}
-                        title={service.title}
-                        description={service.description}
-                        onClick={service.onClick}
+                        title={Events.title}
+                        description={Events.description}
+                        onClick={Events.onClick}
+                        buttonText={Events.buttonText}
                         className="w-full 2xl:max-w-[50%]"
                     />
                 ))}

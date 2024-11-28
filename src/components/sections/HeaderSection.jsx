@@ -15,10 +15,10 @@ const HeaderSection = () => {
           <h1 className="text-2xl font-bold">MyLogo</h1>
         </div>
         <nav className="hidden md:flex space-x-8">
-          <a href="#about-us" className="hover:text-gray-400 py-4">About Us</a>
+          <a href="/about" className="hover:text-gray-400 py-4">About Us</a>
           <a href="/services" className="hover:text-gray-400 py-4">Services</a>
           <a href="/services/events" className="hover:text-gray-400 py-4">Events</a>
-          <a href="#contact" className="hover:text-gray-400 py-4">Contact Us</a>
+          <a href="/contact" className="hover:text-gray-400 py-4">Contact Us</a>
           <a href="/join-community" target="_blank" className="hover:text-gray-400"> <button className='p-4'>
             Join Community
           </button>
@@ -46,10 +46,10 @@ const HeaderSection = () => {
       {/* Dropdown Menu */}
       {isMenuOpen && (
         <div className="md:hidden p-4">
-          <a href="#about-us" className="block hover:text-gray-400 py-2">About Us</a>
+          <a href="/about-us" className="block hover:text-gray-400 py-2">About Us</a>
           <a href="/services" className="block hover:text-gray-400 py-2">Services</a>
           <a href="/services/events" className="block hover:text-gray-400 py-2">Events</a>
-          <a href="#contact" className="block hover:text-gray-400 py-2">Contact</a>
+          <a href="/contact" className="block hover:text-gray-400 py-2">Contact</a>
           <a href="/join-community" target="_blank" className="block hover:text-gray-400 py-2">Join Community</a>
         </div>
       )}

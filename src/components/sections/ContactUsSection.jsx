@@ -78,7 +78,7 @@ const ContactUsSection = () => {
     };
 
     return (
-        <div className="text-center">
+        <div className="text-center ">
             <h2>Contact Us</h2>
             <p>
                 Have Questions? We’re an email away! <br /> <br />
@@ -91,7 +91,7 @@ const ContactUsSection = () => {
 
             <form
                 onSubmit={handleSubmit}
-                className="space-y-4 p-6 max-w-lg mx-auto bg-gray-100 rounded-lg shadow-md"
+                className="space-y-4 p-6 max-w-lg mx-auto rounded-lg "
             >
                 {/* Name */}
                 <input
