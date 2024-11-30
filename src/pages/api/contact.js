@@ -1,4 +1,5 @@
-import { supabase } from "./supabase";
+
+import { supabase } from "@utils/supabase";
 import { runMiddleware } from './utils/cors'; // Import the CORS middleware
 
 export default async function handler(req, res) {
@@ -9,7 +10,7 @@ export default async function handler(req, res) {
     const { name, email, type_of_query, question } = req.body;
 
     const { data, error } = await supabase
-      .from("Contact Us Form")
+      .from("Contact_Us_Form")
       .insert([{ name, email, type_of_query, question }]);
 
     if (error) {
