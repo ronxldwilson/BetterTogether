@@ -19,7 +19,7 @@ const HeaderSection = () => {
           <a href="/services" className="hover:text-gray-400 py-4">Services</a>
           <a href="/services/events" className="hover:text-gray-400 py-4">Events</a>
           <a href="/contact" className="hover:text-gray-400 py-4">Contact Us</a>
-          <a href="/join-community" target="_blank" className="hover:text-gray-400"> <button className='p-4'>
+          <a href="/join-community" target="_blank" className="hover:text-gray-400 "> <button className='p-4'>
             Join Community
           </button>
           </a>
@@ -50,7 +50,7 @@ const HeaderSection = () => {
           <a href="/services" className="block hover:text-gray-400 py-2">Services</a>
           <a href="/services/events" className="block hover:text-gray-400 py-2">Events</a>
           <a href="/contact" className="block hover:text-gray-400 py-2">Contact</a>
-          <a href="/join-community" target="_blank" className="block hover:text-gray-400 py-2">Join Community</a>
+          <a href="/join-community" target="_blank" className=" bg-custom-red text-white rounded-lg p-1">Join Community</a>
         </div>
       )}
     </header>

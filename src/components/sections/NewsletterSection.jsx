@@ -66,7 +66,7 @@ const NewsletterSection = () => {
 
   return (
     <div className="text-center p-6">
-      <h2 className="mb-4 text-lg font-semibold">Subscribe To Our Newsletter</h2>
+      <h2 className="mb-4 ">Subscribe To Our Newsletter</h2>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
         {/* Input Field */}
         <input
@@ -80,7 +80,7 @@ const NewsletterSection = () => {
         {/* Subscribe Button */}
         <button
           onClick={handleSubscribe}
-          className="px-6 py-2 bg-blue-500 text-white rounded-md transition duration-300 hover:bg-blue-600"
+          className="px-6 py-2 text-white rounded-md transition duration-300 hover:bg-blue-600"
         >
           Subscribe
         </button>

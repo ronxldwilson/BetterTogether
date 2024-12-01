@@ -4,7 +4,7 @@ import DropdownInput from "@components/DropdownInput";
 
 
 const ContactUsSection = () => {
-    const optionsList = ["Option 1", "Option 2", "Option 3", "Option 4"];
+    const optionsList = ["I am a registered client and I need support","I have a question about the service", "I am a therapist interested in joining", "I have a business-related inquiry", "I'm interested in Better Together for my organization"];
 
     // State to manage form inputs
     const [formData, setFormData] = useState({

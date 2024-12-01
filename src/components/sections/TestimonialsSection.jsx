@@ -3,16 +3,16 @@ import Testimonial from "@components/Testimonial";
 const TestimonialsSection = () => {
     const testimonials = [
         {
-            text: "This service has changed my life for the better. Highly recommended!",
-            name: "John Doe",
+            text: "Being part of this community has made me feel that I’m not alone in my struggles and provided me with support when I needed it the most.",
+            name: "Mevin",
         },
         {
-            text: "The support and guidance I received were exceptional.",
-            name: "Jane Smith",
+            text: "Thanks to Better Together, I've learned that it's okay to ask for help and that there are people ready to listen and support me. I no longer feel like I have to face difficulties in silence.",
+            name: "Riya",
         },
         {
-            text: "A truly holistic approach to mental wellness. I'm thriving now!",
-            name: "Alex Johnson",
+            text: "For the first time, I felt understood and not alone.",
+            name: "Aksa",
         },
     ];
 
