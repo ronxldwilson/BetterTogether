@@ -13,7 +13,7 @@ export default function About() {
           <p className="p-3 px-6 xl:w-1/2 text-gray-700 leading-relaxed">
             At Better Together, we envision a world where mental well-being is
             nurtured through vibrant communities, where individuals support and
-            learn from one another's experiences, fostering a culture of
+            learn from one another&apos;s experiences, fostering a culture of
             understanding and resilience.
           </p>
         </div>
