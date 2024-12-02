@@ -2,7 +2,6 @@
 import blogs from "data/blogs";
 import HeaderSection from "@components/sections/HeaderSection";
 import FooterSection from "@components/sections/FooterSection";
-import { useEffect } from "react";
 
 export default function BlogDetails({ params }) {
   const { slug } = params;
@@ -16,16 +15,6 @@ export default function BlogDetails({ params }) {
       </div>
     );
   }
-
-  useEffect(() => {
-    // Simulate view increment
-    const storedViews = localStorage.getItem(slug);
-    if (!storedViews) {
-      localStorage.setItem(slug, "1");
-    } else {
-      localStorage.setItem(slug, (parseInt(storedViews) + 1).toString());
-    }
-  }, [slug]);
 
   return (
     <div className="min-h-screen">
@@ -43,7 +32,6 @@ export default function BlogDetails({ params }) {
               <div>
                 <p className="text-lg font-medium text-gray-800">{blog.author.name}</p>
                 <p className="text-sm text-gray-500">{blog.author.subtitle}</p>  {/* Display Subtitle */}
-                {/* <p className="text-sm text-gray-500">Views: {localStorage.getItem(slug)}</p> Show updated views */}
               </div>
             </div>
           </header>

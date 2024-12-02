@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import Link from 'next/link'
 
 const HeaderSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,15 +16,15 @@ const HeaderSection = () => {
           <h1 className="text-2xl font-bold">MyLogo</h1>
         </div>
         <nav className="hidden md:flex space-x-8">
-          <a href="/about" className="hover:text-gray-400 py-4">About Us</a>
-          <a href="/services" className="hover:text-gray-400 py-4">Services</a>
-          <a href="/services/events" className="hover:text-gray-400 py-4">Events</a>
-          <a href="/blog" className="hover:text-gray-400 py-4">Blog</a>
-          <a href="/contact" className="hover:text-gray-400 py-4">Contact Us</a>
-          <a href="/join-community" target="_blank" className="hover:text-gray-400 "> <button className='p-4'>
+          <Link href="/about" className="hover:text-gray-400 py-4">About Us</Link>
+          <Link href="/services" className="hover:text-gray-400 py-4">Services</Link>
+          <Link href="/services/events" className="hover:text-gray-400 py-4">Events</Link>
+          <Link href="/blog" className="hover:text-gray-400 py-4">Blog</Link>
+          <Link href="/contact" className="hover:text-gray-400 py-4">Contact Us</Link>
+          <Link href="/join-community" target="_blank" className="hover:text-gray-400 "> <button className='p-4'>
             Join Community
           </button>
-          </a>
+          </Link>
         </nav>
         {/* Mobile Menu Button */}
         <div className="md:hidden">
@@ -47,12 +48,12 @@ const HeaderSection = () => {
       {/* Dropdown Menu */}
       {isMenuOpen && (
         <div className="md:hidden p-4">
-          <a href="/about-us" className="block hover:text-gray-400 py-2">About Us</a>
-          <a href="/services" className="block hover:text-gray-400 py-2">Services</a>
-          <a href="/services/events" className="block hover:text-gray-400 py-2">Events</a>
-          <a href="/blog" className="block hover:text-gray-400 py-2">Blog</a>
-          <a href="/contact" className="block hover:text-gray-400 py-2">Contact</a>
-          <a href="/join-community" target="_blank" className=" bg-custom-red text-white rounded-lg p-1">Join Community</a>
+          <Link href="/about-us" className="block hover:text-gray-400 py-2">About Us</Link>
+          <Link href="/services" className="block hover:text-gray-400 py-2">Services</Link>
+          <Link href="/services/events" className="block hover:text-gray-400 py-2">Events</Link>
+          <Link href="/blog" className="block hover:text-gray-400 py-2">Blog</Link>
+          <Link href="/contact" className="block hover:text-gray-400 py-2">Contact</Link>
+          <Link href="/join-community" target="_blank" className=" bg-custom-red text-white rounded-lg p-1">Join Community</Link>
         </div>
       )}
     </header>
