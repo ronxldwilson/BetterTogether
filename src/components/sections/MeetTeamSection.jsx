@@ -16,7 +16,7 @@ const MeetTeamSection = () => {
       </div>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
         <ProfileCard
-          image="/images/Naomi.png"
+          image="/images/Naomi.jpg"
           name="Naomi"
           title="Founder & CEO"
           icons={[
@@ -25,7 +25,7 @@ const MeetTeamSection = () => {
           ]}
           />
         <ProfileCard
-          image="/images/Issac.png"
+          image="/images/Issac.jpg"
           name="Issac"
           title="Director & COO"
           icons={[
@@ -34,7 +34,7 @@ const MeetTeamSection = () => {
           ]}
           />
         <ProfileCard
-          image="/images/Ron.png"
+          image="/images/Ron.jpg"
           name="Ron"
           title="Co-Founder & CTO"
           icons={[

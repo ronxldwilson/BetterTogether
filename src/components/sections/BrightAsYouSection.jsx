@@ -1,5 +1,6 @@
 
 import Accordian from "@components/Accordian"
+import Frame from "@components/Frame"
 
 const faqs = [
     {
@@ -45,8 +46,8 @@ const BrightAsYouSection = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className="flex justify-center items-center p-4 lg:p-10 w-full lg:w-auto order-last lg:order-none">
-                    <img src="/placeholder.jpg" alt="Placeholder Image" className="w-48 lg:w-auto max-w-md" />
+                <div className="flex justify-center items-center px-4 lg:px-10 w-full lg:w-auto order-last lg:order-none">
+                    <Frame path="./frame2.gif"/>
                 </div>
             </div>
 

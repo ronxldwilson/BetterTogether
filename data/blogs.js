@@ -15,7 +15,7 @@ recusandae alias error harum maxime adipisci amet laborum.`,
       author: {
         name: "Issac Paul",
         subtitle: "COO and Director, Practising Therapist",
-        image: "/images/Issac.png", // Place this image in the `public` folder
+        image: "/images/Issac.jpg", // Place this image in the `public` folder
       },
       views: 0,
     },
@@ -35,7 +35,7 @@ recusandae alias error harum maxime adipisci amet laborum.`,
       author: {
         name: "Issac Paul",
         subtitle: "COO and Director, Practising Therapist",
-        image: "/images/Issac.png",
+        image: "/images/Issac.jpg",
       },
       views: 0,
     },{
@@ -54,7 +54,7 @@ recusandae alias error harum maxime adipisci amet laborum.`,
       author: {
         name: "Issac Paul",
         subtitle: "COO and Director, Practising Therapist",
-        image: "/images/Issac.png",
+        image: "/images/Issac.jpg",
       },
       views: 0,
     },{
@@ -73,7 +73,7 @@ recusandae alias error harum maxime adipisci amet laborum.`,
       author: {
         name: "Issac Paul",
         subtitle: "COO and Director, Practising Therapist",
-        image: "/images/Issac.png",
+        image: "/images/Issac.jpg",
       },
       views: 0,
     },{
@@ -92,7 +92,7 @@ recusandae alias error harum maxime adipisci amet laborum.`,
       author: {
         name: "Issac Paul",
         subtitle: "COO and Director, Practising Therapist",
-        image: "/images/Issac.png",
+        image: "/images/Issac.jpg",
       },
       views: 0,
     },{
@@ -111,7 +111,7 @@ recusandae alias error harum maxime adipisci amet laborum.`,
       author: {
         name: "Issac Paul",
         subtitle: "COO and Director, Practising Therapist",
-        image: "/images/Issac.png",
+        image: "/images/Issac.jpg",
       },
       views: 0,
     },

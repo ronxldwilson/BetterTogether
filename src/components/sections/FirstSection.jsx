@@ -1,6 +1,5 @@
-"use client"
 
-import Image from 'next/image';
+import Frame from '@components/Frame';
 
 const FirstSection = () => {
     return (
@@ -37,14 +36,7 @@ const FirstSection = () => {
 
             {/* {/* Image Section */}
             <div className="flex justify-center">
-                <Image
-                    src="/frame.gif"
-                    alt="Animated GIF"
-                    width={600}
-                    height={600}
-                    
-                />
-                {/* <img src="/frame.gif" alt="" /> */}
+                <Frame path="frame-.gif"/>
             </div>
         </div>
 
