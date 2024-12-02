@@ -76,7 +76,7 @@ export default function BlogList() {
                   </div>
 
                   {/* Social Share Section */}
-                  <div className="flex justify-end mt-4 space-x-3 relative">
+                  <div className="flex justify-end  relative">
                     {currentUrl && (
                       <>
                         {/* For smaller screens, show ellipsis */}
@@ -84,7 +84,7 @@ export default function BlogList() {
                           className="rotate-90 md:hidden bg-white text-gray-700"
                           onClick={() => handleToggleSocialLinks(blog.slug)}
                         >
-                          <FaEllipsisH size={30} />
+                          <FaEllipsisH size={20} />
                         </button>
 
                         {/* Social Links (Dropdown for mobile) */}
@@ -96,7 +96,7 @@ export default function BlogList() {
                               rel="noopener noreferrer"
                               className="text-blue-500 hover:text-blue-600"
                             >
-                              <FaTwitter size={30} />
+                              <FaTwitter size={20} />
                             </a>
                             <a
                               href={`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`}
@@ -104,7 +104,7 @@ export default function BlogList() {
                               rel="noopener noreferrer"
                               className="text-blue-700 hover:text-blue-800"
                             >
-                              <FaFacebookF size={30} />
+                              <FaFacebookF size={20} />
                             </a>
                             <a
                               href={`https://www.linkedin.com/shareArticle?mini=true&url=${currentUrl}&title=${blog.title}`}
@@ -112,7 +112,7 @@ export default function BlogList() {
                               rel="noopener noreferrer"
                               className="text-blue-700 hover:text-blue-800"
                             >
-                              <FaLinkedinIn size={30} />
+                              <FaLinkedinIn size={20} />
                             </a>
                             <a
                               href={`https://www.instagram.com/?url=${currentUrl}`}  // Open Instagram's website to share the URL (manual post sharing)
@@ -120,7 +120,7 @@ export default function BlogList() {
                               rel="noopener noreferrer"
                               className="text-purple-600 hover:text-purple-700"
                             >
-                              <FaInstagram size={30} />
+                              <FaInstagram size={20} />
                             </a>
                           </div>
                         )}
