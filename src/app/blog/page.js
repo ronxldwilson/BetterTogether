@@ -46,19 +46,19 @@ export default function BlogList() {
               {/* Content Section */}
               <div className="flex-1 px-6 py-2 flex flex-col justify-between">
                 <div>
-                  <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                    <Link href={`/blog/${blog.slug}`} className="hover:text-blue-500 cursor-pointer">
+                  <Link href={`/blog/${blog.slug}`} className="hover:text-blue-500 cursor-pointer">
+                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
                       {blog.title}
-                    </Link>
-                  </h2>
-                  {/* Show 125 characters on smaller devices and 250 on larger devices */}
-                  <p className="text-gray-700 text-sm mb-6">
-                    {blog.content.substring(0, 125)}{/* Show 50 characters on small devices */}
-                    <span className="md:hidden">...</span>
-                    <span className="hidden md:inline">
-                      {blog.content.substring(50, 250)} {/* Show up to 250 characters on larger devices */}
-                    </span>
-                  </p>
+                    </h2>
+                    {/* Show 125 characters on smaller devices and 250 on larger devices */}
+                    <p className="text-gray-700 text-sm mb-6">
+                      {blog.content.substring(0, 125)}{/* Show 50 characters on small devices */}
+                      <span className="md:hidden">...</span>
+                      <span className="hidden md:inline">
+                        {blog.content.substring(50, 250)} {/* Show up to 250 characters on larger devices */}
+                      </span>F
+                    </p>
+                  </Link>
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
@@ -168,8 +168,8 @@ export default function BlogList() {
             </div>
           ))}
         </div>
-      </main>
+      </main >
       <FooterSection />
-    </div>
+    </div >
   );
 }
