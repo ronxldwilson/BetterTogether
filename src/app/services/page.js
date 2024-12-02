@@ -24,10 +24,10 @@ export default function Services() {
     ];
 
     return (
-        <div className="text-center">
+        <div className="">
             <HeaderSection />
 
-            <h1 className="mb-6">Services</h1>
+            <h1 className="mb-6 text-center">Services</h1>
             <div className="flex flex-col items-center justify-center gap-6 px-6">
                 {services.map((service, index) => (
                     <ServiceCard

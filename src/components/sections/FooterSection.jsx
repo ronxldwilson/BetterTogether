@@ -1,3 +1,4 @@
+import Link from 'next/link'
 
 const FooterSection = () => {
     return (
@@ -14,10 +15,10 @@ const FooterSection = () => {
               <div className="w-full md:w-1/4 mb-8 md:mb-0">
                 <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
                 <ul className="space-y-2">
-                  <li><a href="/about" className="hover:text-white">About Us</a></li>
-                  <li><a href="/services" className="hover:text-white">Our Services</a></li>
-                  <li><a href="/blog" className="hover:text-white">Blog</a></li>
-                  <li><a href="/contact" className="hover:text-white">Contact</a></li>
+                  <li><Link href="/about" className="hover:text-white">About Us</Link></li>
+                  <li><Link href="/services" className="hover:text-white">Our Services</Link></li>
+                  <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
+                  <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
                 </ul>
               </div>
     
@@ -25,9 +26,9 @@ const FooterSection = () => {
               <div className="w-full md:w-1/4 mb-8 md:mb-0">
                 <h3 className="text-xl font-semibold text-white mb-4">Legal</h3>
                 <ul className="space-y-2">
-                  <li><a href="/terms" className="hover:text-white">Terms & Conditions</a></li>
-                  <li><a href="/privacy" className="hover:text-white">Privacy Policy</a></li>
-                  <li><a href="/disclaimer" className="hover:text-white">Disclaimer</a></li>
+                  <li><Link href="/terms" className="hover:text-white">Terms & Conditions</Link></li>
+                  <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
+                  <li><Link href="/disclaimer" className="hover:text-white">Disclaimer</Link></li>
                 </ul>
               </div>
     
