@@ -13,7 +13,7 @@ const HeaderSection = () => {
     <header className=" text-black">
       <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold">MyLogo</h1>
+          <Link href={"/"}> <img src="logo.svg" className='h-10' alt="" /> </Link>
         </div>
         <nav className="hidden md:flex space-x-8">
           <Link href="/about" className="hover:text-gray-400 py-4">About Us</Link>

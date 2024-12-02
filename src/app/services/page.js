@@ -9,17 +9,20 @@ export default function Services() {
         {
             title: "Bright As You",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-            onClick: "/services/BAY"
+            onClick: "/services/BAY",
+            buttonText: "Know More",
         },
         {
             title: "Events",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-            onClick: "/services/events"
+            onClick: "/services/events",
+            buttonText: "Know More",
         },
         {
             title: "Enterprise",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-            onClick: "/services/enterprise"
+            onClick: "",
+            buttonText: "Coming Soon",
         },
     ];
 
@@ -34,6 +37,7 @@ export default function Services() {
                         key={index}
                         title={service.title}
                         description={service.description}
+                        buttonText={service.buttonText}
                         onClick={service.onClick}
                         className="w-full 2xl:max-w-[50%]"
                     />

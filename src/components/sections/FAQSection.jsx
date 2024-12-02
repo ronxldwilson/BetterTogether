@@ -22,7 +22,7 @@ const faqsCol1 = [
 const faqsCol2 = [
     {
         heading: "How can I book a session with a professional?",
-        content: "To book a session with a professional, email us at **queries.bettertogether@gmail.com** with the professional's name and your availability. We'll schedule a call for you.",
+        content: "To book a session with a professional, email us at queries.bettertogether@gmail.com with the professional's name and your availability. We'll schedule a call for you.",
     },
     {
         heading: "Are your services online or in-person?",

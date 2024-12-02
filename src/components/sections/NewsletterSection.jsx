@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { supabase } from "@utils/supabase";
 
-const NewsletterSection = () => {
+const NewsletterSection = ({ passText, defaultTitle = true }) => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
   const [statusType, setStatusType] = useState(""); // "success" or "error"
@@ -25,7 +25,7 @@ const NewsletterSection = () => {
     try {
       // Check if email already exists
       const { data: existingEmail, error: fetchError } = await supabase
-        .from("Newsletter") // Ensure this matches your Supabase table name
+        .from("Newsletter")
         .select("email")
         .eq("email", email)
         .single();
@@ -66,7 +66,9 @@ const NewsletterSection = () => {
 
   return (
     <div className="text-center p-6">
-      <h2 className="mb-4 ">Subscribe To Our Newsletter</h2>
+      {/* Conditionally Render the Title */}
+      {defaultTitle && <h2 className="mb-4">Subscribe To Our Newsletter</h2>}
+      <p>{passText}</p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
         {/* Input Field */}
         <input
@@ -80,7 +82,7 @@ const NewsletterSection = () => {
         {/* Subscribe Button */}
         <button
           onClick={handleSubscribe}
-          className="px-6 py-2 text-white rounded-md transition duration-300 hover:bg-blue-600"
+          className="bg-blue-500 px-6 py-2 text-white rounded-md transition duration-300 hover:bg-blue-600"
         >
           Subscribe
         </button>

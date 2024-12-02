@@ -18,7 +18,7 @@ export default function About() {
           </p>
         </div>
 
-        {/* Mission Section */}
+        {/* Mission Section
         <div className="w-full flex flex-col items-center mb-8">
           <h2 className="mb-4">Our Mission</h2>
           <p className="p-3 px-6 xl:w-1/2 text-gray-700 leading-relaxed">
@@ -26,7 +26,7 @@ export default function About() {
             health and well-being, fostering a transformative shift in how
             society perceives and addresses mental health.
           </p>
-        </div>
+        </div> */}
 
         {/* Story Section */}
         <div className="w-full flex flex-col items-center">

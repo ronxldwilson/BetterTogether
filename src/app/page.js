@@ -15,17 +15,17 @@ export default function Home() {
       <HeaderSection />
       <FirstSection />
       <div id="BAY">
-      <BrightAsYouSection />
+
+        <BrightAsYouSection />
       </div>
-      <div id="about-us">
-      <MeetTeamSection />
+      <div className="bg-custom-light-pink p-3">
+
+        <MeetTeamSection />
+        <TestimonialsSection />
       </div>
-      <TestimonialsSection />
       <FAQSection />
       <NewsletterSection />
-      <div id="contact">
       <ContactUsSection />
-      </div>
       <FooterSection />
     </>
   );

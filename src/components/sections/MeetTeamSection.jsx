@@ -1,5 +1,5 @@
 import ProfileCard from "@components/FounderCard";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram,FaGithub } from "react-icons/fa";
 
 const MeetTeamSection = () => {
   return (
@@ -20,29 +20,28 @@ const MeetTeamSection = () => {
           name="Naomi"
           title="Founder & CEO"
           icons={[
-            { icon: <FaFacebook size={20} />, link: "https://www.facebook.com" },
-            { icon: <FaTwitter size={20} />, link: "https://www.twitter.com" },
-            { icon: <FaInstagram size={20} />, link: "https://www.instagram.com" },
+            { icon: <FaLinkedin size={20} />, link: "https://www.linkedin.com/in/naomi-susan/" },
+            { icon: <FaInstagram size={20} />, link: "https://www.instagram.com/naomi_susan_" },
           ]}
-        />
+          />
         <ProfileCard
           image="/images/Issac.png"
           name="Issac"
           title="Director & COO"
           icons={[
-            { icon: <FaFacebook size={20} />, link: "https://www.facebook.com" },
-            { icon: <FaTwitter size={20} />, link: "https://www.twitter.com" },
-            { icon: <FaInstagram size={20} />, link: "https://www.instagram.com" },
+            { icon: <FaLinkedin size={20} />, link: "https://www.linkedin.com/in/issac-paul-151096/" },
+            { icon: <FaInstagram size={20} />, link: "https://www.instagram.com/izach.paul/" },
           ]}
-        />
+          />
         <ProfileCard
           image="/images/Ron.png"
           name="Ron"
           title="Co-Founder & CTO"
           icons={[
-            { icon: <FaFacebook size={20} />, link: "https://www.facebook.com" },
-            { icon: <FaTwitter size={20} />, link: "https://www.twitter.com" },
-            { icon: <FaInstagram size={20} />, link: "https://www.instagram.com" },
+            { icon: <FaLinkedin size={20} />, link: "https:/www.linkedin.com/in/ronxldwilson" },
+            { icon: <FaTwitter size={20} />, link: "https:/www.twitter.com/ronxldwilson" },
+            { icon: <FaGithub size={20} />, link: "https:/www.github.com/ronxldwilson" },
+            { icon: <FaInstagram size={20} />, link: "https://www.instagram.com/ronxldwilson" },
           ]}
         />
       </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 const EventCard = ({ title, description, onClick, buttonText = "Know More", className = "" }) => {
     return (
         <div
-            className={`flex flex-col md:flex-row justify-between items-start md:items-center rounded-lg m-6 p-6 bg-custom-misty-rose shadow-lg ${className}`}
+            className={`flex flex-col md:flex-row justify-between items-start md:items-center rounded-lg m-1 p-6 bg-custom-misty-rose shadow-lg ${className}`}
         >
             <div className="text-left md:flex-1">
                 <p className="text-lg font-medium mb-2">{title}</p>

@@ -16,6 +16,7 @@ module.exports = {
         'custom-misty-rose': '#FFE4E1',
         'custom-pink': '#C08497',
         'custom-red': '#CE2D4F',
+        'custom-light-pink': '#FFF3F3',
       },
       keyframes: {
         slideInHeading: {
