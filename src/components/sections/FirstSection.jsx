@@ -1,3 +1,6 @@
+"use client"
+
+import Image from 'next/image';
 
 const FirstSection = () => {
     return (
@@ -15,9 +18,9 @@ const FirstSection = () => {
                     </p>
                     <a href="#BAY">
 
-                    <button className="my-4 md:my-5 animate-slideInButton">
-                        Know More
-                    </button>
+                        <button className="my-4 md:my-5 animate-slideInButton">
+                            Know More
+                        </button>
                     </a>
                     {/* Image Section */}
                     <img
@@ -30,9 +33,18 @@ const FirstSection = () => {
 
                 </div>
             </div>
-            {/* Image Section */}
-            <div className="flex justify-center py-4 md:py-10 lg:mt-0">
-                <img src="placeholder.jpg" alt="Placeholder Image" className="w-48 lg:w-auto max-w-md" />
+
+
+            {/* {/* Image Section */}
+            <div className="flex justify-center">
+                <Image
+                    src="/frame.gif"
+                    alt="Animated GIF"
+                    width={600}
+                    height={600}
+                    
+                />
+                {/* <img src="/frame.gif" alt="" /> */}
             </div>
         </div>
 
