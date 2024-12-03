@@ -82,7 +82,7 @@ const NewsletterSection = ({ passText, defaultTitle = true }) => {
         {/* Subscribe Button */}
         <button
           onClick={handleSubscribe}
-          className="bg-blue-500 px-6 py-2 text-white rounded-md transition duration-300 hover:bg-blue-600"
+          className=" px-6 py-2 text-white rounded-md transition duration-300 "
         >
           Subscribe
         </button>

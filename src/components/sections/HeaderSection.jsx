@@ -40,7 +40,7 @@ const HeaderSection = () => {
           <Link href="/contact" className="hover:text-gray-400 py-4">
             Contact Us
           </Link>
-          <Link href="/join-community" target="_blank" className="hover:text-gray-400">
+          <Link href="/join-community" className="hover:text-gray-400">
             <button className="p-4">Join Community</button>
           </Link>
         </nav>
@@ -49,7 +49,7 @@ const HeaderSection = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-black focus:outline-none"
+            className="focus:outline-none"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -107,7 +107,6 @@ const HeaderSection = () => {
           </Link>
           <Link
             href="/join-community"
-            target="_blank"
             className="block bg-custom-red text-white rounded-lg p-2 mt-2 text-center"
           >
             Join Community
