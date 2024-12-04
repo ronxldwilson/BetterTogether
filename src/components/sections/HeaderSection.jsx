@@ -54,7 +54,7 @@ const HeaderSection = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <button
             onClick={toggleMenu}
             className="focus:outline-none"

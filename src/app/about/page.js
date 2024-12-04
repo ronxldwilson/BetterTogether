@@ -49,6 +49,7 @@ export default function About() {
       </div>
 
       <MeetTeamSection />
+      
       <FooterSection />
     </div>
   );

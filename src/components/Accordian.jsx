@@ -23,11 +23,11 @@ function Accordion({ faqs }) {
                                 onClick={() => toggleFAQ(index)}
                                 className={`w-full p-4 flex items-center justify-between bg-[#e6f9fc] hover:bg-[#d6f0f5]`}
                             >
-                                <span className="text-xl text-black mx-3">{faq.heading}</span>
+                                <span className="text-xl text-black  mx-3">{faq.heading}</span>
                                 {openIndex === index ? (
-                                    <MinusIcon className="h-5 w-5 text-gray-700" />
+                                    <MinusIcon className="bg-white rounded-full h-5 w-5 text-black" />
                                 ) : (
-                                    <PlusIcon className="h-5 w-5 text-gray-700" />
+                                    <PlusIcon className=" bg-custom-green rounded-full h-5 w-5 text-white " />
                                 )}
                             </button>
                             <div
@@ -35,7 +35,7 @@ function Accordion({ faqs }) {
                                     }   text-gray-800 max-w`}
                             >
                                 <div className="flex ">
-                                    <div className="bg-[#fcecc7] p-6 mx-5 drop-shadow-lg rounded-tl-none rounded-tr-none rounded-2xl ">
+                                    <div className="bg-red-50 p-6 mx-5 drop-shadow-lg rounded-tl-none rounded-tr-none rounded-2xl ">
                                         <p className="text-xl">{faq.content}</p>
 
                                     </div>

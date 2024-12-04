@@ -52,7 +52,7 @@ export default function BAY() {
             <div className="text-center">
 
                 <h1>Bright As You</h1>
-                <p className="p-10"> Discover yourself, find balance, connect with a supportive community, and learn, grow, and heal—all at Better Together
+                <p className="p-10  text-gray-800"> Discover yourself, find balance, connect with a supportive community, and learn, grow, and heal—all at Better Together
                 </p>
 
                 <BAYCard title={data.first.title} content={data.first.content} path={data.first.path} order={data.first.order} />
@@ -61,38 +61,9 @@ export default function BAY() {
                 <BAYCard title={data.fourth.title} content={data.fourth.content} path={data.fourth.path} order={data.fourth.order} />
                 <BAYCard title={data.fifth.title} content={data.fifth.content} path={data.fifth.path} order={data.fifth.order} />
 
-                <p className="p-10 w-[80%] mx-auto text-center"> Through a personalized wellness plan, accountabiltiy, and access to a full range of mental health professionals, we empower individuals to sustain their healing journey. With us, mental wellness becomes a collective, well-rounded experience, where support and care are seamelesly integrated for lasting transformation.
+                <p className=" w-[80%] mx-auto text-center text-gray-800"> Through a personalized wellness plan, accountabiltiy, and access to a full range of mental health professionals, we empower individuals to sustain their healing journey. With us, mental wellness becomes a collective, well-rounded experience, where support and care are seamelesly integrated for lasting transformation.
                 </p>
 
-                <div className="py-10">
-                    <div className="overflow-x-auto">
-                        <table className="table-auto mx-auto border-collapse border border-gray-300 rounded-lg shadow-lg">
-                            <thead className="bg-gray-100">
-                                <tr>
-                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-700">Services</th>
-                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-700">Offered By</th>
-                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-700">No. of Sessions</th>
-                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-700">Cost Per Session (Rs)</th>
-                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-700">Total Cost (Rs)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {tableData.map((row, index) => (
-                                    <tr
-                                        key={row.key}
-                                        className={`transition-colors duration-200 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-gray-200`}
-                                    >
-                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-600">{row.service}</td>
-                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-600">{row.offered_by}</td>
-                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-600">{row.no_of_sessions}</td>
-                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-600">{row.cost_per_session}</td>
-                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-600">{row.total_cost}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
 
                 <a href="https://rzp.io/rzp/bettertogether"
                 >
@@ -101,6 +72,37 @@ export default function BAY() {
                         Enroll Today
                     </button>
                 </a>
+
+
+                <div className="py-10">
+                    <div className="overflow-x-auto">
+                        <table className="table-auto mx-auto border-collapse border border-gray-300 rounded-lg shadow-lg">
+                            <thead className="bg-gray-100">
+                                <tr>
+                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-800">Services</th>
+                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-800">Offered By</th>
+                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-800">No. of Sessions</th>
+                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-800">Cost Per Session (Rs)</th>
+                                    <th className="border border-gray-300 px-6 py-3 text-left text-sm font-semibold text-gray-800">Total Cost (Rs)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {tableData.map((row, index) => (
+                                    <tr
+                                        key={row.key}
+                                        className={`transition-colors duration-200 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-gray-200`}
+                                    >
+                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-800">{row.service}</td>
+                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-800">{row.offered_by}</td>
+                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-800">{row.no_of_sessions}</td>
+                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-800">{row.cost_per_session}</td>
+                                        <td className="border border-gray-300 px-6 py-4 text-sm text-gray-800">{row.total_cost}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
             </div>
             <FooterSection />

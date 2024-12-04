@@ -7,8 +7,8 @@ const Frame = ({path}) => {
             <Image
                 src={path || '/placeholder.jpg'}
                 alt="Animated GIF"
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 priority={true}
                 unoptimized = {true}
             />

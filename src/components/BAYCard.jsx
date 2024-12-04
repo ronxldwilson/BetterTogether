@@ -56,7 +56,7 @@ function textSection({ title, content, order }) {
             <div className="text-2xl md:text-3xl font-bold text-gray-900">
                 <p className="text-2xl md:text-4xl">{title}</p>
             </div>
-            <div className="w- leading-relaxed text-base md:text-lg text-gray-700">
+            <div className=" leading-relaxed text-base md:text-lg text-gray-700">
                 <p>{content}</p>
             </div>
         </div>

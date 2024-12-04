@@ -15,7 +15,7 @@ const faqsCol1 = [
         content: "BAY is a comprehensive mental health and wellness program built on five pillars: Therapy, Fitness, Nutrition, Psychiatric Care, and Community Support.",
     },
     {
-        heading: "How often do you hold events?",
+        heading: "How often do you hold community events?",
         content: "We hold events every two weeks, some of them are paid and others are free to join. Participants of the BAY Program have a year of access to these events for free.",
     }
 ];
