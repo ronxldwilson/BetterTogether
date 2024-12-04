@@ -1,7 +1,7 @@
 import HeaderSection from '@components/sections/HeaderSection'
 import FooterSection from '@components/sections/FooterSection'
 import Image from 'next/image'
-import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaInstagram, FaWhatsapp,FaLinkedin } from 'react-icons/fa'
 
 export default function JoinCommunity () {
   return (
@@ -12,22 +12,6 @@ export default function JoinCommunity () {
         <p className='mb-5 text-lg'>Follow us on our socials</p>
         <div className='flex justify-center space-x-4 mb-8'>
           <a
-            href='https://www.facebook.com'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='Facebook'
-          >
-            <FaFacebook size={30} className='hover:text-blue-600' />
-          </a>
-          <a
-            href='https://www.twitter.com'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='Twitter'
-          >
-            <FaTwitter size={30} className='hover:text-blue-400' />
-          </a>
-          <a
             href='https://www.instagram.com'
             target='_blank'
             rel='noopener noreferrer'
@@ -35,6 +19,16 @@ export default function JoinCommunity () {
           >
             <FaInstagram size={30} className='hover:text-pink-500' />
           </a>
+
+          <a
+            href='https://www.linkedin.com/company/better-together-wellness/'
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='Facebook'
+          >
+            <FaLinkedin size={30} className='hover:text-blue-600' />
+          </a>
+          
           <a
             href='https://chat.whatsapp.com/EucNi5Yunol5g5fycsIvlu'
             target='_blank'

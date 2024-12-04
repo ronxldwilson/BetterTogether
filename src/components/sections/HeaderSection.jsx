@@ -57,7 +57,7 @@ const HeaderSection = () => {
         <div className="md:hidden ">
           <button
             onClick={toggleMenu}
-            className="focus:outline-none"
+            className="focus:outline-none p-3"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (

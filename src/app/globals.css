@@ -69,14 +69,14 @@
     p {
 
         font-family: 'FiraSans', sans-serif;
-        font-size: 24px;
+        font-size: 23px;
     }
     button {
         font-family: 'FiraSans', sans-serif;
         font-size: 20px;
         background-color: #CE2D4F;
         color: white;
-        padding: 25px 30px;
+        padding: 20px 25px;
         border-radius: 16px;
         
         /* margin: 25px; */

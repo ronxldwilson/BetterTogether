@@ -26,8 +26,8 @@ const FooterSection = () => {
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
             <h3 className="text-sm text-white mb-4">Legal</h3>
             <ul className="space-y-2">
-              <li className="text-sm"><Link href="/terms" className="hover:text-white">Terms & Conditions (Coming Soon)</Link></li>
-              <li className="text-sm"><Link href="/privacy" className="hover:text-white">Privacy Policy (Coming Soon)</Link></li>
+              <li className="text-sm"><Link href="/terms-&-conditions" className="hover:text-white">Terms & Conditions (Coming Soon)</Link></li>
+              <li className="text-sm"><Link href="/privacy-policy" className="hover:text-white">Privacy Policy (Coming Soon)</Link></li>
               <li className="text-sm"><Link href="/disclaimer" className="hover:text-white">Disclaimer (Coming Soon)</Link></li>
             </ul>
           </div>
