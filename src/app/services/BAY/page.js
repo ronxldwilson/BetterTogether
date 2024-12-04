@@ -38,8 +38,8 @@ const data = {
 }
 
 const tableData = [
-    { key: "1", service: "Therapy/Counselling", offered_by: "Psychologist", no_of_sessions: "once every week", cost_per_session: "800", total_cost: "1600" },
-    { key: "2", service: "Psychiatric Care(if needed)", offered_by: "Psychiatrist", no_of_sessions: "once in 3 weeks", cost_per_session: "1000", total_cost: "6000" },
+    { key: "1", service: "Therapy/Counselling", offered_by: "Psychologist", no_of_sessions: "once every week", cost_per_session: "1000", total_cost: "6000" },
+    { key: "2", service: "Psychiatric Care(if needed)", offered_by: "Psychiatrist", no_of_sessions: "once in 3 weeks", cost_per_session: "800", total_cost: "1600" },
     { key: "3", service: "Diet Plan", offered_by: "Nutritionist", no_of_sessions: "once in 4 weeks", cost_per_session: "700", total_cost: "1400" },
     { key: "4", service: "Movement Traning", offered_by: "Fitness Coach", no_of_sessions: "twice every weeks", cost_per_session: "500", total_cost: "6000" },
     { key: "5", service: "Community Events", offered_by: "Better Together Team", no_of_sessions: "once in 2 weeks", cost_per_session: "Free", total_cost: "Free" },
