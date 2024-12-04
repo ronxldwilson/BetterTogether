@@ -77,7 +77,7 @@
         background-color: #CE2D4F;
         color: white;
         padding: 25px 30px;
-        border-radius: 15px;
+        border-radius: 16px;
         /* margin: 25px; */
     }
     /* Responsive adjustments for smaller screens */
@@ -104,7 +104,7 @@
             background-color: #CE2D4F;
             color: white;
             padding: 20px 25px;
-            border-radius: 15px;
+            border-radius: 16px;
             /* margin: 25px; */
         }
 
