@@ -5,6 +5,8 @@ import HeaderSection from "@components/sections/HeaderSection";
 import FooterSection from "@components/sections/FooterSection";
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram, FaEllipsisH } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Image from 'next/image'
+
 
 export default function BlogList() {
   const [currentUrl, setCurrentUrl] = useState("");
@@ -35,7 +37,7 @@ export default function BlogList() {
               {/* Image Section */}
               {blog.image && (
                 <div className="md:w-1/3">
-                  <img
+                  <Image
                     src={blog.image}
                     alt={blog.title}
                     className="w-full h-48 object-cover rounded-t-lg md:rounded-tr-none md:rounded-l-lg"
@@ -62,7 +64,7 @@ export default function BlogList() {
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
-                    <img
+                    <Image
                       src={blog.author.image}
                       alt={blog.author.name}
                       className="w-10 h-10 rounded-full mr-4"

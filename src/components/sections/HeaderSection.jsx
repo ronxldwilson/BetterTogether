@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from 'next/image'
 
 const HeaderSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,11 +16,15 @@ const HeaderSection = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/">
-            <img
-              src="/images/logo.svg" 
+            <Image
+              src="/images/logo.svg"
               className="h-10"
               alt="Company Logo"
+              width={150}
+              height={200}
+              unoptimized
             />
+
           </Link>
         </div>
 

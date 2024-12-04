@@ -20,8 +20,8 @@ export default function Home() {
       </div>
       <div className="bg-custom-light-pink p-3">
 
-        <MeetTeamSection />
         <TestimonialsSection />
+        <MeetTeamSection />
       </div>
       <FAQSection />
       <NewsletterSection />

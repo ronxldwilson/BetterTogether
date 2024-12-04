@@ -1,4 +1,5 @@
 import Testimonial from "@components/Testimonial";
+import Image from 'next/image'
 
 const TestimonialsSection = () => {
     const testimonials = [
@@ -19,7 +20,11 @@ const TestimonialsSection = () => {
     return (
         <div className="p-10">
             <div className="flex justify-center space-x-4">
-                <img src="/images/Vector 2.svg" alt="" className="w-12 md:w-20"/>
+                <Image
+                    src="/images/Vector 2.svg"
+                    width={200}
+                    height={200}
+                    alt="" className="w-12 md:w-20" />
                 <h2 className="text-center mb-6">Testimonials</h2>
             </div>
 

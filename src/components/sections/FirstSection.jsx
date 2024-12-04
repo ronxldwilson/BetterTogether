@@ -1,5 +1,6 @@
 
 import Frame from '@components/Frame';
+import Image from 'next/image'
 
 const FirstSection = () => {
     return (
@@ -22,21 +23,22 @@ const FirstSection = () => {
                         </button>
                     </a>
                     {/* Image Section */}
-                    <img
-                        className=" hidden xl:block z-10"
+  
+                    <Image
                         src="/images/Vector 1.svg"
-                        alt=""
+                        className="hidden xl:block z-10"
+                        alt="Company Logo"
+                        width={100}
+                        height={150}
+                        unoptimized
                     />
-
-
-
                 </div>
             </div>
 
 
             {/* {/* Image Section */}
             <div className="flex justify-center">
-                <Frame path="/images/frame-.gif"/>
+                <Frame path="/images/frame-.gif" />
             </div>
         </div>
 

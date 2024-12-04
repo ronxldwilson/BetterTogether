@@ -1,6 +1,6 @@
 import HeaderSection from "@components/sections/HeaderSection";
 import FooterSection from "@components/sections/FooterSection";
-
+import Image from 'next/image'
 import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function JoinCommunity() {
@@ -25,7 +25,7 @@ export default function JoinCommunity() {
                     </a>
                 </div>
                 <div className="flex justify-center">
-                    <img
+                    <Image
                         src="/images/WAQRcode.png"
                         alt="Community Image"
                         className="rounded-lg w-[80%] sm:max-w-md md:max-w-lg lg:max-w-lg"

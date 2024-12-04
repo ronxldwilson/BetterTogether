@@ -1,12 +1,15 @@
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import Image from 'next/image'
 
 const ProfileCard = ({ image, name, title, icons }) => {
   return (
     <div className="max-w-[20rem] bg-white rounded-xl shadow-lg p-6 m text-center border-2 ">
       {/* Profile Image */}
       <div className="flex justify-center">
-        <img
+        <Image
           className="w-64 h-64 rounded-full object-cover border-4 border-white shadow-md"
+          width={200}
+          height={200}
           src={image}
           alt={name}
         />

@@ -2,6 +2,7 @@
 import blogs from "data/blogs";
 import HeaderSection from "@components/sections/HeaderSection";
 import FooterSection from "@components/sections/FooterSection";
+import Image from 'next/image'
 
 export default function BlogDetails({ params }) {
   const { slug } = params;
@@ -24,7 +25,7 @@ export default function BlogDetails({ params }) {
           <header className="mb-6">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">{blog.title}</h1>
             <div className="flex items-center">
-              <img
+              <Image
                 src={blog.author.image}
                 alt={blog.author.name}
                 className="w-12 h-12 rounded-full mr-4"

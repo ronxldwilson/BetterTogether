@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const BAYCard = ({ title, content, path, order }) => {
     return (
         <div className="flex flex-col items-center px-4 py-6">
@@ -33,7 +35,7 @@ const BAYCard = ({ title, content, path, order }) => {
 function imageSection({ path }) {
     return (
         <div className="flex-shrink-0">
-            <img
+            <Image
                 src={path}
                 alt="Illustration"
                 className="w-full max-w-[200px] md:max-w-[400px] h-auto mx-auto"
