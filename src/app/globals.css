@@ -53,7 +53,7 @@
         font-family: 'BriemHand', sans-serif;
         font-weight: bold;
         /* Medium weight */
-        font-size: 64px;
+        font-size: 60px;
         /* Default size for larger screens */
         line-height: 70px;
     }
@@ -63,13 +63,13 @@
         font-family: 'BriemHand', sans-serif;
         font-weight: normal;
         /* Regular weight */
-        font-size: 56px;
+        font-size: 52px;
         /* Default size for larger screens */
     }
     p {
 
         font-family: 'FiraSans', sans-serif;
-        font-size: 20px;
+        font-size: 24px;
     }
     button {
         font-family: 'FiraSans', sans-serif;

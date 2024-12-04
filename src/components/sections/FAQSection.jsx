@@ -47,9 +47,9 @@ const FAQSection = () => {
                 <Image 
                     src="/images/Vector 3.svg"
                     alt=""
-                    width={200}
-                    height={200}
-                    className="w-8 " />
+                    width={100}
+                    height={100}
+                    className="w-8 h-8 md:pt-2 md:w-12 md:h-12" />
             </div>
 
             <div className="flex flex-col lg:flex-row justify-center items-center gap-6">

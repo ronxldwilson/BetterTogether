@@ -30,8 +30,8 @@ export default function Services() {
         <div className="">
             <HeaderSection />
 
-            <h1 className="mb-6 text-center">Services</h1>
-            <div className="flex flex-col items-center justify-center gap-6 px-6">
+            <h2 className=" text-4xl mb-6 text-center">Services</h2>
+            <div className="flex flex-col items-center justify-center gap-6 px-6 py-6">
                 {services.map((service, index) => (
                     <ServiceCard
                         key={index}

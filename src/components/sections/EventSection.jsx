@@ -30,8 +30,8 @@ export default function Events() {
 
   return (
     <div className="text-center">
-      <h1 className="mb-6">Upcoming Events</h1>
-      <div className="flex flex-col items-center justify-center gap-6 mb-6 px-6">
+      <h2 className="mb-6 text-4xl">Upcoming Events</h2>
+      <div className="flex flex-col items-center justify-center gap-6 mb-6 px-6 pb-6">
         {Events.map((event, index) => (
           <EventCard
             key={index}

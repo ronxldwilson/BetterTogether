@@ -32,7 +32,7 @@ const BrightAsYouSection = () => {
             <h2>Bright As You</h2>
 
             <div className="w-full flex justify-center">
-                <p className="p-3 px-14 xl:w-1/2 text-center">
+                <p className="p-3 px-14 xl:w-1/2 text-center ">
                     At Better Together, we don’t believe in short term solutions, but sustainable ones. The Bright As You Program brings a holistic balance between the mental, emotional, and physical.
                 </p>
             </div>

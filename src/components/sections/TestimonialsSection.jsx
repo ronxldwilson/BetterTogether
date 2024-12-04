@@ -22,9 +22,9 @@ const TestimonialsSection = () => {
             <div className="flex justify-center space-x-4">
                 <Image
                     src="/images/Vector 2.svg"
-                    width={200}
-                    height={200}
-                    alt="" className="w-12 md:w-20" />
+                    width={100}
+                    height={100}
+                    alt="" className="w-8 md:w-10" />
                 <h2 className="text-center mb-6">Testimonials</h2>
             </div>
 

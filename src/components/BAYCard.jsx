@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const BAYCard = ({ title, content, path, order }) => {
     return (
-        <div className="flex flex-col items-center px-4 py-6">
+        <div className="flex flex-col items-center px-4 py-2">
             <div
                 className="flex flex-col xl:flex-row items-center justify-between w-full xl:w-[75%] gap-6"
             >
@@ -53,10 +53,10 @@ function textSection({ title, content, order }) {
             className={`space-y-4 md:space-y-6 text-center xl:w-[50%] ${order ? "xl:text-left" : "xl:text-right"
                 }`}
         >
-            <div className="text-2xl md:text-3xl font-bold text-gray-900">
-                <p className="text-2xl md:text-4xl">{title}</p>
+            <div className="text-xl  font-medium">
+                <p className="text-2xl text-balance md:text-3xl">{title}</p>
             </div>
-            <div className=" leading-relaxed text-base md:text-lg text-gray-700">
+            <div className="leading-relaxed text-base md:text-lg">
                 <p>{content}</p>
             </div>
         </div>

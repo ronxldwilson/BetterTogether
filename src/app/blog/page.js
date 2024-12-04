@@ -25,9 +25,9 @@ export default function BlogList() {
     <div className="bg-gray-100 min-h-screen">
       <HeaderSection />
       <main className="container mx-auto px-4 py-10">
-        <h1 className="mb-8 text-center text-4xl font-bold text-gray-800">
+        <h2 className="mb-8 text-center text-4xl">
           Blog List
-        </h1>
+        </h2>
         <div className="flex flex-col gap-8">
           {blogs.map((blog) => (
             <div
@@ -67,6 +67,8 @@ export default function BlogList() {
                     <Image
                       src={blog.author.image}
                       alt={blog.author.name}
+                      width={200}
+                      height={200}
                       className="w-10 h-10 rounded-full mr-4"
                     />
                     <div>
