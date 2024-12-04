@@ -39,6 +39,8 @@ function imageSection({ path }) {
                 src={path}
                 alt="Illustration"
                 className="w-full max-w-[200px] md:max-w-[400px] h-auto mx-auto"
+                width={150}
+                height={200}
             />
         </div>
     );

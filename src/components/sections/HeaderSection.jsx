@@ -17,7 +17,7 @@ const HeaderSection = () => {
         <div className="flex items-center">
           <Link href="/">
             <Image
-              src="/images/logo.svg"
+              src="/images/logo-horizontal.svg"
               className="h-10"
               alt="Company Logo"
               width={150}

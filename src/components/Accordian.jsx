@@ -19,7 +19,7 @@ function Accordian({ faqs }) {
                     >
                         <button
                             onClick={() => toggleFAQ(index)}
-                            className="w-full p-4 flex items-center justify-between text-left text-black font-medium bg-custom-mint hover:bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            className="w-full p-4 text-lg flex items-center justify-between text-left text-black  bg-custom-mint hover:bg-gray-200 rounded-lg "
                         >
                             <span>{faq.heading}</span>
                             {openIndex === index ? (
