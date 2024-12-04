@@ -16,7 +16,7 @@ const HeaderSection = () => {
         <div className="flex items-center">
           <Link href="/">
             <img
-              src="/logo.svg" // Ensure this path is correct
+              src="/images/logo.svg" 
               className="h-10"
               alt="Company Logo"
             />

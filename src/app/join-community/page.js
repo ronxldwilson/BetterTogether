@@ -26,7 +26,7 @@ export default function JoinCommunity() {
                 </div>
                 <div className="flex justify-center">
                     <img
-                        src="/WAQRcode.png"
+                        src="/images/WAQRcode.png"
                         alt="Community Image"
                         className="rounded-lg w-[80%] sm:max-w-md md:max-w-lg lg:max-w-lg"
                     />

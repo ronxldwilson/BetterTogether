@@ -47,7 +47,7 @@ const BrightAsYouSection = () => {
 
                 {/* Image Section */}
                 <div className="flex justify-center items-center px-4 lg:px-10 w-full lg:w-auto order-last lg:order-none">
-                    <Frame path="./frame2.gif"/>
+                    <Frame path="/images/frame2.gif"/>
                 </div>
             </div>
 

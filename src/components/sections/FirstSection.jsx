@@ -24,7 +24,7 @@ const FirstSection = () => {
                     {/* Image Section */}
                     <img
                         className=" hidden xl:block z-10"
-                        src="Vector 1.svg"
+                        src="/images/Vector 1.svg"
                         alt=""
                     />
 
@@ -36,7 +36,7 @@ const FirstSection = () => {
 
             {/* {/* Image Section */}
             <div className="flex justify-center">
-                <Frame path="frame-.gif"/>
+                <Frame path="/images/frame-.gif"/>
             </div>
         </div>
 
