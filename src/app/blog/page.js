@@ -167,6 +167,7 @@ export default function BlogList() {
                       </>
                     )}
                   </div>
+                  
                 </div>
               </div>
             </div>

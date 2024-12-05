@@ -1,8 +1,12 @@
+import HeaderSection from "@components/sections/HeaderSection"
+import FooterSection from "@components/sections/FooterSection"
 
 export default function PrivacyPolicy() {
     return (
         <div>
-            Hello World
+            <HeaderSection/>
+                Coming Soon
+            <FooterSection/>
         </div>
     )
 }

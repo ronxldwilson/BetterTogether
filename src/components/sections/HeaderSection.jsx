@@ -98,6 +98,7 @@ const HeaderSection = () => {
       {/* Dropdown Menu */}
       {isMenuOpen && (
         <div className="md:hidden p-4 bg-white shadow-md">
+          
           <Link href="/about" className="block hover:text-gray-400 py-2">
             About Us
           </Link>

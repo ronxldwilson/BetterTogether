@@ -8,7 +8,7 @@ const FooterSection = () => {
           {/* Logo and Tagline */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
             <h3 className="text-sm  text-white mb-2">Better Together</h3>
-            <p className="text-sm text-gray-400">Tagline to be added here ######.</p>
+            {/* <p className="text-sm text-gray-400">Tagline to be added here ######.</p> */}
           </div>
 
           {/* Links */}
@@ -43,7 +43,7 @@ const FooterSection = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400">
-          <p className="text-sm text-center md:text-left">© {new Date().getFullYear()} Better Together. All rights reserved.</p>
+          {/* <p className="text-sm text-center md:text-left">© {new Date().getFullYear()} Better Together. All rights reserved.</p> */}
           <p className="text-sm text-center md:text-right mt-4 md:mt-0">Disclaimer: This site is still in development.</p>
         </div>
       </div>

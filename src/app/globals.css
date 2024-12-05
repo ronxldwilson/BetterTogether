@@ -116,3 +116,32 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Add this to your CSS file or a style block */
+@keyframes clapAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .clap-button {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .clap-button.animate {
+    animation: clapAnimation 0.2s ease-in-out;
+  }
+  
+  .count {
+    margin-left: 8px;
+  }
+  
