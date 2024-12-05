@@ -26,7 +26,7 @@ const FirstSection = () => {
   
                     <Image
                         src="/images/Vector 1.svg"
-                        className="hidden xl:block z-10"
+                        className="hidden xl:block z-10 animate-slideInButton"
                         alt="Company Logo"
                         width={100}
                         height={150}

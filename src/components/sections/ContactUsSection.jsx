@@ -1,10 +1,10 @@
 "use client"
 import { useState } from "react";
 import DropdownInput from "@components/DropdownInput";
-
+import OrgSocialLinks from "@components/OrgSocialLinks";
 
 const ContactUsSection = () => {
-    const optionsList = ["I am a registered client and I need support","I have a question about the service", "I am a therapist interested in joining", "I have a business-related inquiry", "I'm interested in Better Together for my organization"];
+    const optionsList = ["I am a registered client and I need support", "I have a question about the service", "I am a therapist interested in joining", "I have a business-related inquiry", "I'm interested in Better Together for my organization"];
 
     // State to manage form inputs
     const [formData, setFormData] = useState({
@@ -24,7 +24,7 @@ const ContactUsSection = () => {
     const handleDropdownChange = (selectedOption) => {
         setFormData((prev) => ({ ...prev, type_of_query: selectedOption.toSring() })); // Update 'type_of_query' field
     };
-    
+
 
     const validateForm = () => {
         if (!formData.name || !formData.email || !formData.question) {
@@ -71,7 +71,7 @@ const ContactUsSection = () => {
                 type_of_query: optionsList[0],
                 question: "",
             });
-            console.log("formData: " +  formData)
+            console.log("formData: " + formData)
         } catch (error) {
             console.error("Error sending message:", error);
             alert("There was an issue sending your message. Please try again.");
@@ -87,6 +87,14 @@ const ContactUsSection = () => {
                 queries, or collaborations. <br /> <br />
                 Or send us a message on our social media!
             </p>
+
+            <div className="flex justify-center p-3">
+                <div>
+                    <OrgSocialLinks />
+
+                </div>
+            </div>
+
 
             {error && <p className="text-red-500">{error}</p>} {/* Show error message if validation fails */}
 

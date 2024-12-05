@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
+import OrgSocialLinks from "@components/OrgSocialLinks"
 
 const FooterSection = () => {
   return (
@@ -40,21 +40,7 @@ const FooterSection = () => {
             <ul className="space-y-2">
               <li className="text-sm">MG Road, 62/63 The Pavilion, Church Street, Bengaluru, KA 560001</li>
               <li className="text-sm">
-                <div className='flex'>
-                  <div className='pr-2'>
-                    <Link href="https://www.linkedin.com/company/better-together-wellness"></Link>
-                    <FaLinkedin size={30} />
-                  </div>
-                  <div className='px-2'>
-
-                    <Link href="https://www.instagram.com/thebettertogether.in"></Link>
-                    <FaInstagram size={30} />
-                  </div>
-                  <div className='px-2'>
-                    <Link href="https://github.com/ronxldwilson/BetterTogether"></Link>
-                    <FaGithub size={30} />
-                  </div>
-                </div>
+                <OrgSocialLinks/>
 
               </li>
             </ul>

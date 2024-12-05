@@ -1,7 +1,7 @@
 import HeaderSection from '@components/sections/HeaderSection'
 import FooterSection from '@components/sections/FooterSection'
 import Image from 'next/image'
-import { FaInstagram, FaWhatsapp,FaLinkedin } from 'react-icons/fa'
+import OrgSocialLinks from '@components/OrgSocialLinks'
 
 export default function JoinCommunity () {
   return (
@@ -10,34 +10,13 @@ export default function JoinCommunity () {
       <div className='text-center py-4'>
         <h1 className='py-5 text-2xl font-bold'>Join Better Together</h1>
         <p className='mb-5 text-lg'>Follow us on our socials</p>
-        <div className='flex justify-center space-x-4 mb-8'>
-          <a
-            href='https://www.instagram.com'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='Instagram'
-          >
-            <FaInstagram size={30} className='hover:text-pink-500' />
-          </a>
 
-          <a
-            href='https://www.linkedin.com/company/better-together-wellness/'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='Facebook'
-          >
-            <FaLinkedin size={30} className='hover:text-blue-600' />
-          </a>
-          
-          <a
-            href='https://chat.whatsapp.com/EucNi5Yunol5g5fycsIvlu'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='WhatsApp'
-          >
-            <FaWhatsapp size={30} className='hover:text-green-500' />
-          </a>
+        <div className='flex justify-center mb-5'>
+          <div >
+            <OrgSocialLinks />
+          </div>
         </div>
+
         <a
           href='https://chat.whatsapp.com/EucNi5Yunol5g5fycsIvlu'
           target='_blank'
