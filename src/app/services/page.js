@@ -8,21 +8,21 @@ export default function Services() {
     const services = [
         {
             title: "Bright As You",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
+            description: "The BAY program is a 6 week long program that is based on 5 important pillars and offers a holistic wellness plan to empower you for the journey ahead",
             onClick: "/services/BAY",
             buttonText: "Know More",
         },
         {
             title: "Events",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
+            description: "We regularly host community events, both free and paid, designed to help you connect with others and remind you that you are not alone on this journey",
             onClick: "/services/events",
-            buttonText: "Know More",
+            buttonText: "Register Now ",
         },
         {
             title: "Enterprise",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-            onClick: "",
-            buttonText: "Coming Soon",
+            description: "We ofer custom solutions for enterprises, to inquire more about the services we offer reach out to us via mail at queries.bettertogether@gmail.com",
+            onClick: "/contact",
+            buttonText: "Contact Us",
         },
     ];
 

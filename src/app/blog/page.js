@@ -1,16 +1,16 @@
 "use client";
 import Link from "next/link";
-import blogs from "../../../data/blogs";
+import blogs from "@data/blogs";
 import HeaderSection from "@components/sections/HeaderSection";
 import FooterSection from "@components/sections/FooterSection";
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram, FaEllipsisH } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import Image from 'next/image'
 
-
 export default function BlogList() {
   const [currentUrl, setCurrentUrl] = useState("");
   const [activeBlogSlug, setActiveBlogSlug] = useState(""); // Track which blog's social links are open
+
 
   // Set the current URL on the client-side only
   useEffect(() => {
@@ -24,8 +24,8 @@ export default function BlogList() {
   return (
     <div className="bg-gray-100 min-h-screen">
       <HeaderSection />
-      <main className="container mx-auto px-4 py-10">
-        <h2 className="mb-8 text-center text-4xl">
+      <main className="container md:w-[60%] mx-auto px-4 py-2 pb-8">
+        <h2 className="mb-5 text-center text-2xl">
           Blog List
         </h2>
         <div className="flex flex-col gap-8">
@@ -49,19 +49,20 @@ export default function BlogList() {
               <div className="flex-1 px-6 py-2 flex flex-col justify-between">
                 <div>
                   <Link href={`/blog/${blog.slug}`} className="hover:text-blue-500 cursor-pointer">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className=" md:text-lg text-gray-900 mb-4">
                       {blog.title}
                     </h2>
                     {/* Show 125 characters on smaller devices and 250 on larger devices */}
                     <p className="text-gray-700 text-sm mb-6">
-                      {blog.content.substring(0, 125)}{/* Show 50 characters on small devices */}
+                      {blog.content.substring(0, 140)}{/* Show 50 characters on small devices */}
                       <span className="md:hidden">...</span>
                       <span className="hidden md:inline">
                         {blog.content.substring(50, 250)} {/* Show up to 250 characters on larger devices */}
-                      </span>F
+                      </span>
                     </p>
                   </Link>
                 </div>
+
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <Image
@@ -72,8 +73,8 @@ export default function BlogList() {
                       className="w-10 h-10 rounded-full mr-4"
                     />
                     <div>
-                      <p className="text-gray-900 font-medium">{blog.author.name}</p>
-                      <p className="text-gray-500  text-sm">{blog.author.subtitle}</p> {/* Display Subtitle */}
+                      <p className="text-gray-900 text-sm font-medium">{blog.author.name}</p>
+                      <p className="text-gray-900  text-sm">{blog.author.subtitle}</p> {/* Display Subtitle */}
                     </div>
 
 

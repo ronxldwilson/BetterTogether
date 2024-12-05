@@ -17,7 +17,7 @@ function Accordion({ faqs }) {
                         key={index}
                         className="overflow-hidden"
                     >
-                        <div className="drop-shadow-lg"> 
+                        <div className="drop-shadow-sm"> 
 
                             <button
                                 onClick={() => toggleFAQ(index)}
@@ -31,11 +31,11 @@ function Accordion({ faqs }) {
                                 )}
                             </button>
                             <div
-                                className={`transition-all duration-300 ${openIndex === index ? "max-h-96 px-3" : "max-h-0"
+                                className={`transition-all duration-150 ${openIndex === index ? "max-h-96 px-3" : "max-h-0"
                                     }   text-gray-800 max-w`}
                             >
                                 <div className="flex ">
-                                    <div className="bg-red-50 p-6 mx-5 drop-shadow-lg rounded-tl-none rounded-tr-none rounded-2xl ">
+                                    <div className="bg-red-50 p-6 mx-2 drop-shadow-lg rounded-tl-none rounded-tr-none rounded-2xl ">
                                         <p className="">{faq.content}</p>
 
                                     </div>

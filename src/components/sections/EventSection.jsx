@@ -31,7 +31,7 @@ export default function Events() {
   return (
     <div className="text-center">
       <h2 className="mb-6 text-4xl">Upcoming Events</h2>
-      <div className="flex flex-col items-center justify-center gap-6 mb-6 px-6 pb-6">
+      {/* <div className="flex flex-col items-center justify-center gap-6 mb-6 px-6 pb-6">
         {Events.map((event, index) => (
           <EventCard
             key={index}
@@ -42,7 +42,7 @@ export default function Events() {
             className="w-full 2xl:max-w-[50%]"
           />
         ))}
-      </div>
+      </div> */}
       <InCaseOfNoEvents />
     </div>
   );
@@ -50,7 +50,7 @@ export default function Events() {
 
 function InCaseOfNoEvents() {
   const passText =
-    "We don't have any upcoming events as of now. Subscribe to our Newsletter to stay updated about our upcoming events.";
+    "We don't have any upcoming events. Subscribe to our Newsletter to be notified first about our any upcoming events.";
   return (
     <div>
       <NewsletterSection passText={passText} defaultTitle={false}/>

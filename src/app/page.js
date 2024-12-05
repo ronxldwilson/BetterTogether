@@ -5,7 +5,6 @@ import MeetTeamSection from "@components/sections/MeetTeamSection"
 import TestimonialsSection from "@components/sections/TestimonialsSection"
 import FAQSection from "@components/sections/FAQSection"
 import NewsletterSection from "@components/sections/NewsletterSection"
-import ContactUsSection from "@components/sections/ContactUsSection"
 import FooterSection from "@components/sections/FooterSection"
 
 
@@ -25,7 +24,6 @@ export default function Home() {
       </div>
       <FAQSection />
       <NewsletterSection />
-      <ContactUsSection />
       <FooterSection />
     </>
   );

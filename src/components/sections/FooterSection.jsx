@@ -20,7 +20,7 @@ const FooterSection = () => {
               <li className="text-sm"><Link href="/about" className="hover:text-white">About Us</Link></li>
               <li className="text-sm"><Link href="/services" className="hover:text-white">Our Services</Link></li>
               <li className="text-sm"><Link href="/blog" className="hover:text-white">Blog</Link></li>
-              <li className="text-sm"><Link href="/contact" className="hover:text-white">Contact</Link></li>
+              <li className="text-sm"><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
             </ul>
           </div>
 

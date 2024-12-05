@@ -29,7 +29,7 @@ const data = {
   },
   fifth: {
     title: '05 Community',
-    content: `Our supportive community of individuals with similar interests will help you understand that you are not alone in this brjourney and that we have your back! Community events will take place once in two weeks and are free to attend for BAY members for the first year.`,
+    content: `Our supportive community of individuals with similar interests will help you understand that you are not alone in this journey and that we have your back! Community events will take place once in two weeks and are free to attend for BAY members for the first year.`,
     path: '/images/BAY Graphics/community.svg',
     order: true
   }

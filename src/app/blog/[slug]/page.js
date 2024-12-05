@@ -63,13 +63,13 @@ export default function BlogDetails ({ params }) {
   }
 
   return (
-    <div className='min-h-screen'>
+    <div className='bg-gray-100 min-h-screen'>
       <HeaderSection />
-      <div className='container mx-auto px-4 py-10 lg:px-20'>
-        <article className='bg-white rounded-lg shadow-lg p-8'>
+      <div className='container mx-auto px-4 py-5 lg:px-20'>
+        <article className='bg-white rounded-lg shadow-lg px-8 py-8'>
           <header className='mb-6'>
             <div>
-              <h2 className='text-gray-900 mb-4'>{blog.title}</h2>
+              <h2 className='md:text-lg text-gray-900 mb-4'>{blog.title}</h2>
             </div>
             <div className='flex items-center'>
               <Image
@@ -83,30 +83,35 @@ export default function BlogDetails ({ params }) {
                 <p className=' text-sm md:text-lg font-medium text-gray-800'>
                   {blog.author.name}
                 </p>
-                <p className='text-xs md:text-md text-gray-500'>{blog.author.subtitle}</p>
+                <p className='text-xs md:text-md text-gray-500'>
+                  {blog.author.subtitle}
+                </p>
               </div>
             </div>
 
             <div className=''>
               <div className='flex justify-between items-center mt-5 md:mt-10'>
-                <div className='items-center'>
+                <div className=' flex items-center'>
                   <button
-                    className={`m-auto p-[20px] clap-button ${
+                    className={`m-auto p-2 mr-2 clap-button ${
                       isAnimating ? 'animate' : ''
                     }`}
                     onClick={handleClick}
                   >
                     <img
                       src='/images/sparkle-white.svg'
-                      width='20'  
+                      width='20'
                       height='20'
                       alt='Sparkle'
                       className='inline-block rotate-180'
                     />
-                    <span className=' text-sm count ml-2'>{countSparkles}</span>
+                    <span className=' text-sm count ml-2 '>
+                      {countSparkles}
+                    </span>
                   </button>
+                  <p>{blog.data_published}</p>
                 </div>
-                <div className='p-[20px]'>
+                <div className=''>
                   {socialShare(
                     showSocialLinks,
                     handleToggleSocialLinks,
@@ -119,12 +124,16 @@ export default function BlogDetails ({ params }) {
           </header>
 
           <hr className='mb-6 border-gray-300' />
+
           <div className='text-left leading-relaxed'>
-            <p>{blog.content}</p>
+            <div dangerouslySetInnerHTML={{ __html: blog.contentHTML }}></div>
           </div>
         </article>
       </div>
-      <NewsletterSection passText={"Subscribe to our Newsletter to recieve new blogs notification "} defaultTitle={false} />
+      <NewsletterSection
+        passText={'Subscribe to our newsletter to never miss a new blog!'}
+        defaultTitle={false}
+      />
       <FooterSection />
     </div>
   )

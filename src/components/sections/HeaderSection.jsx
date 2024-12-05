@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from 'next/image'
+import OrgSocialLinks from "@components/OrgSocialLinks";
 
 const HeaderSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const HeaderSection = () => {
   };
 
   return (
-    <header className="text-black bg-white  top-0 z-50">
+    <header className="text-black bg-white  top-0 z-50 md:shadow-sm mb-1" >
       <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
@@ -29,9 +30,12 @@ const HeaderSection = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          <Link href="/about" className="hover:text-gray-400 py-4">
-            About Us
+        <nav className="hidden md:flex space-x-5">
+          {/* <Link href="/" className="hover:text-gray-400 py-4">
+            Home
+          </Link> */}
+          <Link href="/services/BAY" className="hover:text-gray-400 py-4">
+            BAY
           </Link>
           <Link href="/services" className="hover:text-gray-400 py-4">
             Services
@@ -39,11 +43,11 @@ const HeaderSection = () => {
           <Link href="/services/events" className="hover:text-gray-400 py-4">
             Events
           </Link>
-          <Link href="/services/BAY" className="hover:text-gray-400 py-4">
-            BAY
-          </Link>
           <Link href="/blog" className="hover:text-gray-400 py-4">
             Blog
+          </Link>
+          <Link href="/about" className="hover:text-gray-400 py-4">
+            About Us
           </Link>
           <Link href="/contact" className="hover:text-gray-400 py-4">
             Contact Us
@@ -98,9 +102,15 @@ const HeaderSection = () => {
       {/* Dropdown Menu */}
       {isMenuOpen && (
         <div className="md:hidden p-4 bg-white shadow-md">
-          
+
+          <Link href="/about" className="block hover:text-gray-400 py-2">
+            Home
+          </Link>
           <Link href="/about" className="block hover:text-gray-400 py-2">
             About Us
+          </Link>
+          <Link href="/services/BAY" className="block hover:text-gray-400 py-2">
+            BAY
           </Link>
           <Link href="/services" className="block hover:text-gray-400 py-2">
             Services
@@ -108,21 +118,26 @@ const HeaderSection = () => {
           <Link href="/services/events" className="block hover:text-gray-400 py-2">
             Events
           </Link>
-          <Link href="/services/BAY" className="block hover:text-gray-400 py-2">
-            BAY
-          </Link>
           <Link href="/blog" className="block hover:text-gray-400 py-2">
             Blog
           </Link>
           <Link href="/contact" className="block hover:text-gray-400 py-2">
             Contact
           </Link>
-          <Link
-            href="/join-community"
-            className="block bg-custom-red text-white rounded-lg p-2 mt-2 text-center"
-          >
-            Join Community
-          </Link>
+
+          <div className="flex justify-between ">
+            <div className="bg-custom-red text-white rounded-lg my-[3px] px-1">
+              <Link
+                href="/join-community"
+                className="block  "
+              >
+                Join Community
+              </Link>
+            </div>
+            <div>
+              {/* <OrgSocialLinks/> */}
+            </div>
+          </div>
         </div>
       )}
     </header>

@@ -71,7 +71,7 @@ const NewsletterSection = ({ passText, defaultTitle = true }) => {
       {/* Conditionally Render the Title */}
       {defaultTitle && <h2 className="mb-4">Subscribe To Our Newsletter</h2>}
       <div className=" flex justify-center items-center">
-        <p className="w-[50%] ">{passText}</p>
+        <p className="w-[80%] md:w-[50%] ">{passText}</p>
 
       </div>
       <br />
