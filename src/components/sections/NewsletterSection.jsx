@@ -8,6 +8,8 @@ const NewsletterSection = ({ passText, defaultTitle = true }) => {
   const [status, setStatus] = useState("");
   const [statusType, setStatusType] = useState(""); // "success" or "error"
 
+
+  // onClick handler for the newsletter section 
   const handleSubscribe = async () => {
     if (!email) {
       setStatus("Please enter an email address.");

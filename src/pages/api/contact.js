@@ -1,10 +1,7 @@
 
 import { supabase } from "@utils/supabase";
-import { runMiddleware } from './utils/cors'; // Import the CORS middleware
 
 export default async function handler(req, res) {
-  // Run CORS middleware
-  await runMiddleware(req, res);
 
   if (req.method === "POST") {
     const { name, email, type_of_query, question } = req.body;
