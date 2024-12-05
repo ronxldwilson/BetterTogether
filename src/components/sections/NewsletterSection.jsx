@@ -68,7 +68,11 @@ const NewsletterSection = ({ passText, defaultTitle = true }) => {
     <div className="text-center p-6">
       {/* Conditionally Render the Title */}
       {defaultTitle && <h2 className="mb-4">Subscribe To Our Newsletter</h2>}
-      <p>{passText}</p>
+      <div className=" flex justify-center items-center">
+        <p className="w-[50%] ">{passText}</p>
+
+      </div>
+      <br />
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
         {/* Input Field */}
         <input
@@ -91,9 +95,8 @@ const NewsletterSection = ({ passText, defaultTitle = true }) => {
       {/* Status Message */}
       {status && (
         <p
-          className={`mt-4 text-sm ${
-            statusType === "success" ? "text-green-600" : "text-red-600"
-          }`}
+          className={`mt-4 text-sm ${statusType === "success" ? "text-green-600" : "text-red-600"
+            }`}
         >
           {status}
         </p>

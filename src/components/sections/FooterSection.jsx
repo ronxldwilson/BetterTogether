@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
+
 const FooterSection = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10 px-4 md:px-8">
@@ -7,13 +9,13 @@ const FooterSection = () => {
         <div className="flex flex-wrap justify-eve">
           {/* Logo and Tagline */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
-            <h3 className="text-sm  text-white mb-2">Better Together</h3>
+            <h3 className="text-sm font-semibold  text-white mb-2">Better Together</h3>
             {/* <p className="text-sm text-gray-400">Tagline to be added here ######.</p> */}
           </div>
 
           {/* Links */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
-            <h3 className="text-sm text-white mb-4">Quick Links</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li className="text-sm"><Link href="/about" className="hover:text-white">About Us</Link></li>
               <li className="text-sm"><Link href="/services" className="hover:text-white">Our Services</Link></li>
@@ -24,7 +26,7 @@ const FooterSection = () => {
 
           {/* Legal Links */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
-            <h3 className="text-sm text-white mb-4">Legal</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">Legal</h3>
             <ul className="space-y-2">
               <li className="text-sm"><Link href="/terms-&-conditions" className="hover:text-white">Terms & Conditions (Coming Soon)</Link></li>
               <li className="text-sm"><Link href="/privacy-policy" className="hover:text-white">Privacy Policy (Coming Soon)</Link></li>
@@ -34,9 +36,27 @@ const FooterSection = () => {
 
           {/* Address  */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
-            <h3 className="text-sm text-white mb-4">Better Together Wellness Pvt Ltd</h3>
+            <h3 className="text-sm font-semibold text-white mb-4">Better Together Wellness Pvt Ltd</h3>
             <ul className="space-y-2">
               <li className="text-sm">MG Road, 62/63 The Pavilion, Church Street, Bengaluru, KA 560001</li>
+              <li className="text-sm">
+                <div className='flex'>
+                  <div className='pr-2'>
+                    <Link href="https://www.linkedin.com/company/better-together-wellness"></Link>
+                    <FaLinkedin size={30} />
+                  </div>
+                  <div className='px-2'>
+
+                    <Link href="https://www.instagram.com/thebettertogether.in"></Link>
+                    <FaInstagram size={30} />
+                  </div>
+                  <div className='px-2'>
+                    <Link href="https://github.com/ronxldwilson/BetterTogether"></Link>
+                    <FaGithub size={30} />
+                  </div>
+                </div>
+
+              </li>
             </ul>
           </div>
         </div>

@@ -1,9 +1,13 @@
 'use client'
 import { useState, useEffect } from 'react'
+
 import blogs from 'data/blogs'
 import HeaderSection from '@components/sections/HeaderSection'
 import FooterSection from '@components/sections/FooterSection'
+import NewsletterSection from '@components/sections/NewsletterSection'
+
 import Image from 'next/image'
+
 import {
   FaTwitter,
   FaFacebookF,
@@ -115,11 +119,12 @@ export default function BlogDetails ({ params }) {
           </header>
 
           <hr className='mb-6 border-gray-300' />
-          <div className='text-left text-gray-800 leading-relaxed'>
+          <div className='text-left leading-relaxed'>
             <p>{blog.content}</p>
           </div>
         </article>
       </div>
+      <NewsletterSection passText={"Subscribe to our Newsletter to recieve new blogs notification "} defaultTitle={false} />
       <FooterSection />
     </div>
   )
