@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://thebettertogether.in
+
+# Sitemaps
+Sitemap: https://thebettertogether.in/sitemap.xml
