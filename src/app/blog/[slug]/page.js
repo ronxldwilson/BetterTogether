@@ -1,29 +1,64 @@
 'use client'
 import { useState, useEffect } from 'react'
-
 import blogs from 'data/blogs'
 import HeaderSection from '@components/sections/HeaderSection'
 import FooterSection from '@components/sections/FooterSection'
 import NewsletterSection from '@components/sections/NewsletterSection'
-
 import Image from 'next/image'
+import { socialShare } from '@components/socialShare'
 
-import {
-  FaTwitter,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaInstagram,
-  FaEllipsisH
-} from 'react-icons/fa' // Import icons
-
-export default function BlogDetails ({ params }) {
+export default function BlogDetails({ params }) {
   const [countSparkles, setCountSparkles] = useState(0) // This will be dynamically fetched from the database
   const [isAnimating, setIsAnimating] = useState(false)
 
   const [slug, setSlug] = useState(null)
-
   const [currentUrl, setCurrentUrl] = useState('')
   const [showSocialLinks, setShowSocialLinks] = useState(false) // State to toggle social links
+
+  const [toastMessage, setToastMessage] = useState('')
+  const [activeBlogSlug, setActiveBlogSlug] = useState('')
+
+  const handleCopyToClipboard = (text) => {
+    let success = false;
+
+    const isMobile = window.innerWidth <= 768;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard
+        .writeText(text)
+        .then(() => {
+          success = true;
+        })
+        .catch(() => {
+          success = false;
+        })
+        .finally(() => {
+          if (!isMobile) {
+            setToastMessage(success ? "Copied to Clipboard!" : "Failed to copy to clipboard.");
+            setTimeout(() => setToastMessage(""), 2000); 
+          }
+        });
+    } else {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand("copy");
+        success = true;
+      } catch (err) {
+        success = false;
+      }
+      document.body.removeChild(textarea);
+  
+      if (!isMobile) {
+        setToastMessage(success ? "Copied to Clipboard!" : "Failed to copy to clipboard.");
+        setTimeout(() => setToastMessage(""), 2000); 
+      }
+    }
+  
+    setActiveBlogSlug(""); // Close the dropdown on mobile
+  };
 
   // Set the slug directly from params
   useEffect(() => {
@@ -31,7 +66,6 @@ export default function BlogDetails ({ params }) {
     setCurrentUrl(window.location.href) // Set current URL when the component is mounted
   }, [params])
 
-  // Wait for params to load
   if (!slug) {
     return (
       <div className='min-h-screen flex items-center justify-center bg-gray-100'>
@@ -44,7 +78,6 @@ export default function BlogDetails ({ params }) {
     setCountSparkles(c => c + 1)
     setIsAnimating(true)
 
-    // Remove the animation class after the animation completes
     setTimeout(() => setIsAnimating(false), 500) // 500ms is the duration of the animation
   }
 
@@ -93,9 +126,7 @@ export default function BlogDetails ({ params }) {
               <div className='flex justify-between items-center mt-5 md:mt-10'>
                 <div className=' flex items-center'>
                   <button
-                    className={`m-auto p-2 mr-2 clap-button ${
-                      isAnimating ? 'animate' : ''
-                    }`}
+                    className={`m-auto p-2 mr-2 clap-button ${isAnimating ? 'animate' : ''}`}
                     onClick={handleClick}
                   >
                     <img
@@ -105,19 +136,12 @@ export default function BlogDetails ({ params }) {
                       alt='Sparkle'
                       className='inline-block rotate-180'
                     />
-                    <span className=' text-sm count ml-2 '>
-                      {countSparkles}
-                    </span>
+                    <span className=' text-sm count ml-2 '>{countSparkles}</span>
                   </button>
                   <p>{blog.data_published}</p>
                 </div>
                 <div className=''>
-                  {socialShare(
-                    showSocialLinks,
-                    handleToggleSocialLinks,
-                    currentUrl,
-                    blog.title
-                  )}
+                  {socialShare(showSocialLinks, handleToggleSocialLinks, currentUrl, blog.title, handleCopyToClipboard)}
                 </div>
               </div>
             </div>
@@ -130,105 +154,8 @@ export default function BlogDetails ({ params }) {
           </div>
         </article>
       </div>
-      <NewsletterSection
-        passText={'Subscribe to our newsletter to never miss a new blog!'}
-        defaultTitle={false}
-      />
+      <NewsletterSection passText={'Subscribe to our newsletter to never miss a new blog!'} defaultTitle={false} />
       <FooterSection />
     </div>
-  )
-}
-
-function socialShare (
-  showSocialLinks,
-  handleToggleSocialLinks,
-  currentUrl,
-  blogTitle
-) {
-  return (
-    <>
-      <div className='flex justify-end relative'>
-        <button
-          className='rotate-90 md:hidden bg-white text-gray-700'
-          onClick={handleToggleSocialLinks}
-        >
-          <FaEllipsisH size={20} />
-        </button>
-
-        {/* Show social links if toggled */}
-        {showSocialLinks && (
-          <div className='absolute top-full flex right-0 bg-white shadow-md rounded-md p-4 space-x-4 md:static md:flex md:space-x-3 md:p-0'>
-            <a
-              href={`https://twitter.com/intent/tweet?url=${currentUrl}&text=${blogTitle}`}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-blue-500 hover:text-blue-600'
-            >
-              <FaTwitter size={20} />
-            </a>
-            <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-blue-700 hover:text-blue-800'
-            >
-              <FaFacebookF size={20} />
-            </a>
-            <a
-              href={`https://www.linkedin.com/shareArticle?mini=true&url=${currentUrl}&title=${blogTitle}`}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-blue-700 hover:text-blue-800'
-            >
-              <FaLinkedinIn size={20} />
-            </a>
-            <a
-              href={`https://www.instagram.com/?url=${currentUrl}`} // Open Instagram's website to share the URL (manual post sharing)
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-purple-600 hover:text-purple-700'
-            >
-              <FaInstagram size={20} />
-            </a>
-          </div>
-        )}
-
-        {/* For larger screens, display social links directly */}
-        <div className='hidden md:flex space-x-3'>
-          <a
-            href={`https://twitter.com/intent/tweet?url=${currentUrl}&text=${blogTitle}`}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-blue-500 hover:text-blue-600'
-          >
-            <FaTwitter size={20} />
-          </a>
-          <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-blue-700 hover:text-blue-800'
-          >
-            <FaFacebookF size={20} />
-          </a>
-          <a
-            href={`https://www.linkedin.com/shareArticle?mini=true&url=${currentUrl}&title=${blogTitle}`}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-blue-700 hover:text-blue-800'
-          >
-            <FaLinkedinIn size={20} />
-          </a>
-          <a
-            href={`https://www.instagram.com/?url=${currentUrl}`} // Open Instagram's website to share the URL (manual post sharing)
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-purple-600 hover:text-purple-700'
-          >
-            <FaInstagram size={20} />
-          </a>
-        </div>
-      </div>
-    </>
   )
 }
