@@ -125,7 +125,7 @@ export default function BlogDetails({ params }) {
             <div className=''>
               <div className='flex justify-between items-center mt-5 md:mt-10'>
                 <div className=' flex items-center'>
-                  <button
+                  {/* <button
                     className={`m-auto p-2 mr-2 clap-button ${isAnimating ? 'animate' : ''}`}
                     onClick={handleClick}
                   >
@@ -137,7 +137,7 @@ export default function BlogDetails({ params }) {
                       className='inline-block rotate-180'
                     />
                     <span className=' text-sm count ml-2 '>{countSparkles}</span>
-                  </button>
+                  </button> */}
                   <p>{blog.data_published}</p>
                 </div>
                 <div className=''>

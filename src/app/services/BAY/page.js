@@ -1,6 +1,7 @@
 import HeaderSection from '@components/sections/HeaderSection'
 import FooterSection from '@components/sections/FooterSection'
 import BAYCard from '@components/BAYCard'
+import Link from 'next/link'
 
 const data = {
   first: {
@@ -131,9 +132,19 @@ export default function BAY () {
           seamelesly integrated for lasting transformation.
         </p>
 
-        <a href='https://rzp.io/rzp/bettertogether'>
-          <button className='my-5'>Enroll Today</button>
-        </a>
+        <div className='flex flex-col space-y-2 pt-2 md:flex-row md:space-y-0 md:space-x-4 justify-center items-center'>
+          <Link href='/contact'>
+            <button className=''>
+              Contact for More Info
+            </button>
+          </Link>
+
+          <Link href='https://rzp.io/rzp/bettertogether'>
+            <button className=''>
+              Enroll Today
+            </button>
+          </Link>
+        </div>
 
         <div className='py-10'>
           <div className='overflow-x-auto'>

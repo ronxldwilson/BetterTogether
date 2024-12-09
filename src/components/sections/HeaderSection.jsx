@@ -103,7 +103,7 @@ const HeaderSection = () => {
       {isMenuOpen && (
         <div className="md:hidden p-4 bg-white shadow-md">
 
-          <Link href="/about" className="block hover:text-gray-400 py-2">
+          <Link href="/" className="block hover:text-gray-400 py-2">
             Home
           </Link>
           <Link href="/about" className="block hover:text-gray-400 py-2">

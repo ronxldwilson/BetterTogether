@@ -2,6 +2,7 @@ import HeaderSection from '@components/sections/HeaderSection'
 import FooterSection from '@components/sections/FooterSection'
 import Image from 'next/image'
 import OrgSocialLinks from '@components/OrgSocialLinks'
+import Link from 'next/link'
 
 export default function JoinCommunity () {
   return (
@@ -17,22 +18,22 @@ export default function JoinCommunity () {
           </div>
         </div>
 
-        <a
-          href='https://chat.whatsapp.com/EucNi5Yunol5g5fycsIvlu'
+        <Link
+          href='https://www.instagram.com/thebettertogether.in'
           target='_blank'
           rel='noopener noreferrer'
           aria-label='WhatsApp'
         >
           <div className='flex justify-center'>
             <Image
-              src='/images/WAQRcode.png'
+              src='/images/INQR.jpg'
               alt='Community Image'
-              className='rounded-lg w-[80%] sm:max-w-md md:max-w-lg lg:max-w-lg'
-              width={400}
-              height={400}
+              className='rounded-2xl w-[80%] sm:max-w-md md:max-w-lg lg:max-w-lg'
+              width={300}
+              height={300}
             />
           </div>
-        </a>
+        </Link>
       </div>
       <FooterSection />
     </div>
