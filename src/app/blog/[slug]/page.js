@@ -141,7 +141,7 @@ export default function BlogDetails({ params }) {
                   <p>{blog.data_published}</p>
                 </div>
                 <div className=''>
-                  {socialShare(showSocialLinks, handleToggleSocialLinks, currentUrl, blog.title, handleCopyToClipboard)}
+                  {/* {socialShare(showSocialLinks, handleToggleSocialLinks, currentUrl, blog.title, handleCopyToClipboard)} */}
                 </div>
               </div>
             </div>
