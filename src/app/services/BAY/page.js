@@ -63,9 +63,9 @@ const tableData = [
   },
   {
     key: '4',
-    service: 'Movement Traning',
+    service: 'Movement Training',
     offered_by: 'Fitness Coach',
-    no_of_sessions: 'twice every weeks',
+    no_of_sessions: 'twice every week',
     cost_per_session: '500',
     total_cost: '6000'
   },
@@ -125,11 +125,11 @@ export default function BAY () {
         <br />
         <p className=' w-[80%] mx-auto text-left text-pretty leading-relaxed'>
           {' '}
-          Through a personalized wellness plan, accountabiltiy, and access to a
+          Through a personalized wellness plan, accountability, and access to a
           full range of mental health professionals, we empower individuals to
           sustain their healing journey. With us, mental wellness becomes a
           collective, well-rounded experience, where support and care are
-          seamelesly integrated for lasting transformation.
+          seamlessly integrated for lasting transformation.
         </p>
 
         <div className='flex flex-col space-y-2 pt-2 md:flex-row md:space-y-0 md:space-x-4 justify-center items-center'>

@@ -7,7 +7,7 @@ const faqsCol1 = [
         content: "Bright As You is our holistic mental health program where each client is supported by a team of professionals over a period of 6 weeks in order to help them begin and sustain their journey.",
     },
     {
-        heading: "What is the eligiblity criteria for BAY program?",
+        heading: "What is the eligibility criteria for BAY program?",
         content: "Anyone above the age of 18, who is willing to seek help is eligible for BAY!",
     },
     {

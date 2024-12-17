@@ -20,7 +20,7 @@ export default function Services() {
         },
         {
             title: "Enterprise",
-            description: "We ofer custom solutions for enterprises, to inquire more about the services we offer reach out to us via mail at queries.bettertogether@gmail.com",
+            description: "We offer custom solutions for enterprises, to inquire more about the services we offer reach out to us via mail at queries.bettertogether@gmail.com",
             onClick: "/contact",
             buttonText: "Contact Us",
         },
