@@ -27,6 +27,15 @@
     /* Medium weight */
     font-style: normal;
 }
+/* Define Bree Serif Regular */
+@font-face {
+    font-family: 'BreeSerif';
+    src: url('/fonts/BreeSerif-Regular.ttf') format('truetype');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+}
+
+
 
 
 /* Define Fira Sans Regular font */
@@ -50,8 +59,8 @@
 
     /* For h1, set 64px as default and 56px for small screens (sm) */
     h1 {
-        font-family: 'BriemHand', sans-serif;
-        font-weight: bold;
+        font-family: 'BreeSerif', sans-serif;
+        font-weight: normal;
         /* Medium weight */
         font-size: 60px;
         /* Default size for larger screens */
@@ -60,7 +69,7 @@
 
     /* For h2, set 56px as default and 48px for small screens (sm) */
     h2 {
-        font-family: 'BriemHand', sans-serif;
+        font-family: 'BreeSerif', sans-serif;
         font-weight: normal;
         /* Regular weight */
         font-size: 52px;

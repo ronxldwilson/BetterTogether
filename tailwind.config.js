@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        BriemHand: ['BriemHand', 'sans-serif'], // Ensure this matches your font setup
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

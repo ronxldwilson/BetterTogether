@@ -10,7 +10,8 @@ const FirstSection = () => {
                 {/* Text Section */}
                 <div className="text-center lg:text-left max-w-lg ">
                     <div className="py-4 md:py-10 animate-slideInHeading">
-                        <h1 className="">Holistic <br /> Mental Wellness <br /> For Everyone</h1>
+                        <h1 className="">Holistic <br /> Mental Wellness <br /> 
+                        <span className='font-BriemHand'>For Everyone</span></h1>
                     </div>
 
                     <p className="animate-slideInPara">
@@ -23,7 +24,7 @@ const FirstSection = () => {
                         </button>
                     </a>
                     {/* Image Section */}
-  
+
                     <Image
                         src="/images/Vector 1.svg"
                         className="hidden xl:block z-10 animate-slideInButton"
