@@ -34,6 +34,9 @@ const HeaderSection = () => {
           {/* <Link href="/" className="hover:text-gray-400 py-4">
             Home
           </Link> */}
+          <Link href="/" className="hover:text-gray-400 py-4">
+            Home
+          </Link>
           <Link href="/services/BAY" className="hover:text-gray-400 py-4">
             BAY
           </Link>

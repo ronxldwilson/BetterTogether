@@ -42,7 +42,7 @@ const MeetTeamSection = () => {
 
             { icon: <FaLinkedin size={20} />, link: "https://www.linkedin.com/in/ronxldwilson" },
             { icon: <FaTwitter size={20} />, link: "https://www.twitter.com/ronxldwilson" },
-            { icon: <FaGithub size={20} />, link: "https://www.github.com/ronxldwilson" },
+            // { icon: <FaGithub size={20} />, link: "https://www.github.com/ronxldwilson" },
             { icon: <FaInstagram size={20} />, link: "https://www.instagram.com/ronxldwilson" },
           ]}
         />
