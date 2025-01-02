@@ -58,8 +58,8 @@ const tableData = [
     service: 'Diet Plan',
     offered_by: 'Nutritionist',
     no_of_sessions: 'once in 4 weeks',
-    cost_per_session: '700',
-    total_cost: '1400'
+    cost_per_session: '1500',
+    total_cost: '3000'
   },
   {
     key: '4',
