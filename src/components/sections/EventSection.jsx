@@ -6,32 +6,20 @@ import NewsletterSection from "./NewsletterSection";
 export default function Events() {
   const Events = [
     {
-      title: "Event 1",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-      onClick: "/events/event-one",
-      buttonText: "Register",
-    },
-    {
-      title: "Events 2",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-      onClick: "/events/event-two",
-      buttonText: "Register",
-    },
-    {
-      title: "Event 3",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum!",
-      onClick: "/events/event-three",
-      buttonText: "Register",
-    },
+      "title": "Thrive: Share Your Story, Find Your Community",
+      "description": `Create a piece that represents your journey, then share it with a supportive community eager to connect & engage with your narrative. Use your artwork as a prop to open up, inspire others, and find meaningful connections in a space where creativity and stories come together.
+    
+    Let's build a community that thrives on sharing, understanding, and artistic expression!`,
+      "onClick": "https://lu.ma/ns7uege7",
+      "buttonText": "Register & Join Now!"
+    }
+    
   ];
 
   return (
     <div className="text-center">
       <h2 className="mb-6 text-4xl">Upcoming Events</h2>
-      {/* <div className="flex flex-col items-center justify-center gap-6 mb-6 px-6 pb-6">
+      <div className="flex flex-col items-center justify-center gap-6 mb-6 px-6 pb-6">
         {Events.map((event, index) => (
           <EventCard
             key={index}
@@ -42,8 +30,8 @@ export default function Events() {
             className="w-full 2xl:max-w-[50%]"
           />
         ))}
-      </div> */}
-      <InCaseOfNoEvents />
+      </div>
+      {/* <InCaseOfNoEvents /> */}
     </div>
   );
 }
