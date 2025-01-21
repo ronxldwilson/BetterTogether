@@ -35,7 +35,7 @@ function Accordion({ faqs }) {
                                     }   text-gray-800 max-w`}
                             >
                                 <div className="flex ">
-                                    <div className="bg-red-50 p-6 mx-2 drop-shadow-lg rounded-tl-none rounded-tr-none rounded-2xl ">
+                                    <div className="bg-red-50 p-6 mx-2  drop-shadow-lg rounded-tl-none rounded-tr-none rounded-2xl md:text-xs">
                                         <p className="">{faq.content}</p>
 
                                     </div>
