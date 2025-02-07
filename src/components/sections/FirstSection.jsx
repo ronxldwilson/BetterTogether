@@ -17,10 +17,10 @@ const FirstSection = () => {
                     <p className="animate-slideInPara">
                         We offer carefully tailored mental wellness programs with expert guidance & community support that take you from surviving to thriving.
                     </p>
-                    <a href="#BAY">
+                    <a href="https://book.thebettertogether.in/">
 
                         <button className="my-4 md:my-5 animate-slideInButton">
-                            Know More
+                            Book Session
                         </button>
                     </a>
                     {/* Image Section */}
