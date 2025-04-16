@@ -6,12 +6,14 @@ import TestimonialsSection from '@components/sections/TestimonialsSection'
 import FAQSection from '@components/sections/FAQSection'
 import NewsletterSection from '@components/sections/NewsletterSection'
 import FooterSection from '@components/sections/FooterSection'
+import ProfessionalSection from '@components/sections/ProfessionalSection'
 
 export default function Home () {
   return (
     <>
       <HeaderSection />
       <FirstSection />
+      {/* <ProfessionalSection/> */}
       <div id='BAY'>
         <BrightAsYouSection />
       </div>

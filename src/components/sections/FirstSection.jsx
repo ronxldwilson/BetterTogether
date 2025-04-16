@@ -17,8 +17,8 @@ const FirstSection = () => {
                     <p className="animate-slideInPara">
                         We offer carefully tailored mental wellness programs with expert guidance & community support that take you from surviving to thriving.
                     </p>
-                    {/* <a href="https://book.thebettertogether.in/"> */}
-                    <a href="#BAY">
+                    <a href="https://book.thebettertogether.in/">
+                    {/* <a href="#BAY"> */}
 
                         <button className="my-4 md:my-5 animate-slideInButton">
                             Book Session
