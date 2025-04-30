@@ -49,7 +49,7 @@ const FooterSection = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400">
-          {/* <p className="text-sm text-center md:text-left">© {new Date().getFullYear()} Better Together. All rights reserved.</p> */}
+          <p className="text-sm text-center md:text-left">© {new Date().getFullYear()} Better Together. All rights reserved.</p>
 {/*           <p className="text-sm text-center md:text-right mt-4 md:mt-0">Disclaimer: This site is still in development.</p> */}
         </div>
       </div>
