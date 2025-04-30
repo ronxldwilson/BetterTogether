@@ -23,8 +23,8 @@ const faqsCol1 = [
 const faqsCol2 = [
     {
         heading: "How can I book a session with a professional?",
-        content: "To book a session with a professional, email us at queries.bettertogether@gmail.com with the professional's name and your availability. We'll schedule a call for you.",
-    },
+        content: 'To book a session with a professional, simply visit <a class="underline" href="https://book.thebettertogether.in" target="_blank" rel="noopener noreferrer">book.thebettertogether.in</a> and pick a time that works for you. Our process is quick, easy, and designed to help you find the right support.',
+    },    
     {
         heading: "Are your services online or in-person?",
         content: "Right now we are online, but we are working to bring our services to you in person soon",
@@ -44,7 +44,7 @@ const FAQSection = () => {
         <div className="text-center p-6">
             <div className="flex justify-center space-x-4 mb-8">
                 <h2 className="">Frequently Asked Questions</h2>
-                <Image 
+                <Image
                     src="/images/Vector 3.svg"
                     alt=""
                     width={100}

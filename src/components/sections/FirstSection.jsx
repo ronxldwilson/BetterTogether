@@ -30,8 +30,8 @@ const FirstSection = () => {
                         src="/images/Vector 1.svg"
                         className="hidden xl:block z-10 animate-slideInButton"
                         alt="Company Logo"
-                        width={100}
-                        height={150}
+                        width={50}
+                        height={75}
                         unoptimized
                     />
                 </div>
@@ -39,8 +39,8 @@ const FirstSection = () => {
 
 
             {/* {/* Image Section */}
-            <div className="flex justify-center">
-                <Frame path="/images/frame-.gif" />
+            <div className="flex justify-center md:py-12">
+                <Frame path="/images/image.jpg" />
             </div>
         </div>
 

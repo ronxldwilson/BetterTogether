@@ -8,7 +8,7 @@ import FAQSection from '@components/sections/FAQSection'
 import NewsletterSection from '@components/sections/NewsletterSection'
 import FooterSection from '@components/sections/FooterSection'
 // import ProfessionalSection from '@components/sections/ProfessionalSection'
-// import ProfileSlider from '../components/ProfileSlider'
+import ProfileSlider from '../components/ProfileSlider'
 
 export default function Home () {
   return (
@@ -30,7 +30,7 @@ export default function Home () {
       <HeaderSection />
       <FirstSection />
       {/* <ProfessionalSection /> */}
-      {/* <ProfileSlider /> */}
+      <ProfileSlider />
       <div id='BAY'>
         <BrightAsYouSection />
       </div>
@@ -39,7 +39,7 @@ export default function Home () {
         <MeetTeamSection />
       </div>
       <FAQSection />
-      <NewsletterSection />
+      <NewsletterSection passText={"Join our Better Together newsletter, curated insights, mental wellness tips, and stories that help you build a healthier, more balanced life."}/>
       <FooterSection />
     </>
   )

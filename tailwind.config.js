@@ -43,11 +43,16 @@ module.exports = {
           // '75%': { transform: 'translateX(-25%) rotate(10deg)', opacity: '0.8' }, 
           '100%': { transform: 'translateX(0) rotate(0deg)', opacity: '1' },
         },
+        scroll: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         slideInHeading: 'slideInHeading 0.8s ', 
         slideInPara: 'slideInPara 0.8s ', 
         slideInButton: 'slideInButton 0.8s ', 
+        scroll: "scroll 30s linear infinite",
       },
     },
   },

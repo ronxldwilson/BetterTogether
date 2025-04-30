@@ -17,13 +17,13 @@ function Accordion({ faqs }) {
                         key={index}
                         className="overflow-hidden"
                     >
-                        <div className="drop-shadow-sm"> 
+                        <div className="drop-shadow-sm">
 
                             <button
                                 onClick={() => toggleFAQ(index)}
                                 className={`w-full p-4 flex items-center justify-between bg-[#e6f9fc] hover:bg-[#d6f0f5]`}
                             >
-                                <span className="text-sm text-black ">{faq.heading}</span>
+                                <span className="text-base text-black ">{faq.heading}</span>
                                 {openIndex === index ? (
                                     <MinusIcon className="bg-white rounded-full w-6 text-black" />
                                 ) : (
@@ -35,8 +35,11 @@ function Accordion({ faqs }) {
                                     }   text-gray-800 max-w`}
                             >
                                 <div className="flex ">
-                                    <div className="bg-red-50 p-6 mx-2  drop-shadow-lg rounded-tl-none rounded-tr-none rounded-2xl md:text-xs">
-                                        <p className="">{faq.content}</p>
+                                    <div className="bg-red-50 p-6 mx-2  drop-shadow-lg rounded-tl-none rounded-tr-none rounded-2xl ">
+                                        <p
+                                            className="text-base"
+                                            dangerouslySetInnerHTML={{ __html: faq.content }}
+                                        />
 
                                     </div>
                                 </div>

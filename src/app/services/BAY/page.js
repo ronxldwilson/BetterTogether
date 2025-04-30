@@ -36,48 +36,48 @@ const data = {
   }
 }
 
-const tableData = [
-  {
-    key: '1',
-    service: 'Therapy/Counselling',
-    offered_by: 'Psychologist',
-    no_of_sessions: 'once every week',
-    cost_per_session: '1000',
-    total_cost: '6000'
-  },
-  {
-    key: '2',
-    service: 'Psychiatric Care(if needed)',
-    offered_by: 'Psychiatrist',
-    no_of_sessions: 'once in 3 weeks',
-    cost_per_session: '800',
-    total_cost: '1600'
-  },
-  {
-    key: '3',
-    service: 'Diet Plan',
-    offered_by: 'Nutritionist',
-    no_of_sessions: 'once in 4 weeks',
-    cost_per_session: '1500',
-    total_cost: '3000'
-  },
-  {
-    key: '4',
-    service: 'Movement Training',
-    offered_by: 'Fitness Coach',
-    no_of_sessions: 'twice every week',
-    cost_per_session: '500',
-    total_cost: '6000'
-  },
-  {
-    key: '5',
-    service: 'Community Events',
-    offered_by: 'Better Together Team',
-    no_of_sessions: 'once in 2 weeks',
-    cost_per_session: 'Free',
-    total_cost: 'Free'
-  }
-]
+// const tableData = [
+//   {
+//     key: '1',
+//     service: 'Therapy/Counselling',
+//     offered_by: 'Psychologist',
+//     no_of_sessions: 'once every week',
+//     cost_per_session: '1000',
+//     total_cost: '6000'
+//   },
+//   {
+//     key: '2',
+//     service: 'Psychiatric Care(if needed)',
+//     offered_by: 'Psychiatrist',
+//     no_of_sessions: 'once in 3 weeks',
+//     cost_per_session: '800',
+//     total_cost: '1600'
+//   },
+//   {
+//     key: '3',
+//     service: 'Diet Plan',
+//     offered_by: 'Nutritionist',
+//     no_of_sessions: 'once in 4 weeks',
+//     cost_per_session: '1500',
+//     total_cost: '3000'
+//   },
+//   {
+//     key: '4',
+//     service: 'Movement Training',
+//     offered_by: 'Fitness Coach',
+//     no_of_sessions: 'twice every week',
+//     cost_per_session: '500',
+//     total_cost: '6000'
+//   },
+//   {
+//     key: '5',
+//     service: 'Community Events',
+//     offered_by: 'Better Together Team',
+//     no_of_sessions: 'once in 2 weeks',
+//     cost_per_session: 'Free',
+//     total_cost: 'Free'
+//   }
+// ]
 
 export default function BAY () {
   return (
@@ -132,7 +132,7 @@ export default function BAY () {
           seamlessly integrated for lasting transformation.
         </p>
 
-        <div className='flex flex-col space-y-2 pt-2 md:flex-row md:space-y-0 md:space-x-4 justify-center items-center'>
+        <div className='flex flex-col space-y-2 py-12 md:flex-row md:space-y-0 md:space-x-4 justify-center items-center'>
           <Link href='/contact'>
             <button className=''>
               Contact for More Info
@@ -145,7 +145,7 @@ export default function BAY () {
             </button>
           </Link>
         </div>
-
+{/* 
         <div className='py-10'>
           <div className='overflow-x-auto'>
             <table className='table-auto mx-auto border-collapse border-2 border-gray-400 rounded-lg shadow-lg overflow-hidden'>
@@ -196,7 +196,7 @@ export default function BAY () {
               </tbody>
             </table>
           </div>
-        </div>
+        </div> */}
       </div>
       <FooterSection />
     </div>
