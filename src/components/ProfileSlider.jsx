@@ -1,5 +1,5 @@
 'use client';
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 const professionals = [
   {
@@ -42,53 +42,87 @@ const professionals = [
     image: "/images/Professionals/vivek.png",
     link: "https://book.thebettertogether.in/dr-u-vivek",
   },
-  // {
-  //   id: 6,
-  //   name: "Gufrana Khanam",
-  //   title: "Nutritionist",
-  //   available: true,
-  //   image: "/images/Professionals/default-pic.jpg",
-  //   link: "https://book.thebettertogether.in",
-  // },
-  // Add more as needed
 ];
 
 export default function ProfileSlider() {
+  const scrollRef = useRef(null);
+  const intervalRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const startAutoScroll = () => {
+    if (!intervalRef.current) {
+      intervalRef.current = setInterval(() => {
+        if (scrollRef.current) {
+          const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+          if (scrollLeft + clientWidth >= scrollWidth - 10) {
+            scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
+          } else {
+            scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+          }
+        }
+      }, 2000);
+    }
+  };
+
+  const stopAutoScroll = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    if (!isHovered) {
+      startAutoScroll();
+    } else {
+      stopAutoScroll();
+    }
+
+    return () => stopAutoScroll(); // cleanup on unmount
+  }, [isHovered]);
+
   return (
-    <div className="w-full overflow-hidden py-8 bg-gray-50">
-      <div className="animate-scroll whitespace-nowrap flex gap-6 px-6">
-        {professionals.concat(professionals).map((pro, index) => (
-          <div
-            key={`${pro.id}-${index}`}
-            className="min-w-[250px] max-w-xs bg-white rounded-2xl shadow-md p-4 flex-shrink-0 transition-transform hover:scale-105"
-          >
-            <img
-              src={pro.image}
-              alt={pro.name}
-              className="w-40 h-40 object-cover rounded-full mb-4 mx-auto"
-            />
-            <h3 className="text-lg font-semibold">{pro.name}</h3>
-            <p className="text-sm text-gray-600">{pro.title}</p>
-            <p
-              className={`mt-2 text-sm font-medium ${
-                pro.available ? "text-green-600" : "text-red-500"
-              }`}
+    <div className="relative w-full py-8">
+      <div className="max-w-screen-2xl mx-auto">
+        <div
+          ref={scrollRef}
+          className="flex gap-6 overflow-x-auto scroll-smooth px-6 py-4 scrollbar-hide"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          {professionals.map((pro) => (
+            <div
+              key={pro.id}
+              className="min-w-[250px] max-w-xs bg-white rounded-2xl shadow-xl p-4 flex-shrink-0 transition-transform hover:scale-105"
             >
-              {pro.available ? "Available" : "Currently Unavailable"}
-            </p>
-            <button
-              disabled={!pro.available}
-              onClick={() => window.open(pro.link, "_blank")}
-              className={`mt-4 w-full py-2 rounded-xl font-medium text-white ${
-                pro.available
-                  ? "bg-indigo-600 hover:bg-indigo-700"
-                  : "bg-gray-400 cursor-not-allowed"
-              }`}
-            >
-              Book Call
-            </button>
-          </div>
-        ))}
+              <img
+                src={pro.image}
+                alt={pro.name}
+                className="w-40 h-40 object-cover rounded-full mb-4 mx-auto"
+              />
+              <h3 className="text-lg font-semibold text-center">{pro.name}</h3>
+              <p className="text-sm text-gray-600 text-center">{pro.title}</p>
+              <p
+                className={`mt-2 text-sm font-medium text-center ${
+                  pro.available ? "text-green-600" : "text-red-500"
+                }`}
+              >
+                {pro.available ? "Available" : "Currently Unavailable"}
+              </p>
+              <button
+                disabled={!pro.available}
+                onClick={() => window.open(pro.link, "_blank")}
+                className={`mt-4 w-full py-2 rounded-xl font-medium text-white ${
+                  pro.available
+                    ? "bg-indigo-600 hover:bg-indigo-700"
+                    : "bg-gray-400 cursor-not-allowed"
+                }`}
+              >
+                Book Call
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -37,9 +37,9 @@ const HeaderSection = () => {
           <Link href="/" className="hover:text-gray-400 py-4">
             Home
           </Link>
-          <Link href="/services/BAY" className="hover:text-gray-400 py-4">
+          {/* <Link href="/services/BAY" className="hover:text-gray-400 py-4">
             BAY
-          </Link>
+          </Link> */}
           <Link href="/services" className="hover:text-gray-400 py-4">
             Services
           </Link>
@@ -112,9 +112,9 @@ const HeaderSection = () => {
           <Link href="/about" className="block hover:text-gray-400 py-2">
             About Us
           </Link>
-          <Link href="/services/BAY" className="block hover:text-gray-400 py-2">
+          {/* <Link href="/services/BAY" className="block hover:text-gray-400 py-2">
             BAY
-          </Link>
+          </Link> */}
           <Link href="/services" className="block hover:text-gray-400 py-2">
             Services
           </Link>

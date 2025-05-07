@@ -88,7 +88,7 @@ export default function BAY () {
         <p className=' px-4 py-2 space-y-4 text-center'>
           {' '}
           Discover yourself, find balance, connect with a supportive community,
-          and learn, grow, and heal—all at Better Together
+          and learn, grow, and heal - all at Better Together
         </p>
 
         <BAYCard

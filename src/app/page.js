@@ -9,6 +9,8 @@ import NewsletterSection from '@components/sections/NewsletterSection'
 import FooterSection from '@components/sections/FooterSection'
 // import ProfessionalSection from '@components/sections/ProfessionalSection'
 import ProfileSlider from '../components/ProfileSlider'
+import PackagesInfo from '../components/PackagesInfo'
+
 
 export default function Home () {
   return (
@@ -31,9 +33,12 @@ export default function Home () {
       <FirstSection />
       {/* <ProfessionalSection /> */}
       <ProfileSlider />
-      <div id='BAY'>
+      <PackagesInfo/>
+      
+      {/* <div id='BAY'>
         <BrightAsYouSection />
-      </div>
+      </div> */}
+
       <div className='bg-custom-light-pink p-3'>
         <TestimonialsSection />
         <MeetTeamSection />
